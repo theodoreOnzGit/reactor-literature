@@ -64,8 +64,16 @@ a #link("https://github.com/casella/ThermoPower")[github repository]. This
 license seems to be mostly 
 an Open Sourced License that allows commercial use as long as attribution 
 is given. NuKomp unfortunately does not seem to be open sourced at the 
-moment.
+moment. Nevertheless, it seems the ThermoPower library is a good place 
+to start.
 
+= Exploring the ThermoPower Modelica Library
+
+The ThermoPower modelica library has several components, including using 
+Finite Element Modelling (FEM) for its heat exchangers 
+@casella2003modelling as opposed to Finite Volume Modelling used in 
+OpenFOAM @jasak2009openfoam. Nevertheless, it is able to handle 
+compressible flows, which makes it quite useful for power plant modelling.
 
 #bibliography("../main.bib",
 style: "chicago-author-date")
