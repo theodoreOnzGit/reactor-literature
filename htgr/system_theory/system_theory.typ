@@ -13,6 +13,8 @@ For system level code, calculation times need to be short. In the case
 of Digital Twins and plant simulators, the calculations need to be 
 faster than real-time. This is an additional constraint. 
 
+= Literature Review
+
 Existing system codes such as the many versions of RELAP @fletcher1992relap5
 @berry2018relap and SAM @zhou2021development are unfortunately closed source.
 Nevertheless, some of their working principles may be available in literature.
@@ -25,6 +27,12 @@ However, if we want to simulate design basis events such as water ingress
 @fang2023transport, then the interaction between multiphase 
 flow (water) and single phase compressible flow (gas) may be quite 
 important.
+
+Previous work done here includes the Engineering Simulation System (ESS)
+designed to model startup, shutdown and accident scenarios for the HTR-PM 
+@sui2014engineering. This ESS in turn uses vPower for its thermal hydraulics 
+@sui2014engineering.
+
 
 #bibliography("../main.bib",
 style: "chicago-author-date")
