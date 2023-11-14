@@ -7,7 +7,7 @@
 
 
 // for numbered headings
-#set heading(numbering: "1.a.")
+#set heading(numbering: "1.1.1")
 
 // underline link elements
 #show link: underline
@@ -74,6 +74,41 @@ Finite Element Modelling (FEM) for its heat exchangers
 @casella2003modelling as opposed to Finite Volume Modelling used in 
 OpenFOAM @jasak2009openfoam. Nevertheless, it is able to handle 
 compressible flows, which makes it quite useful for power plant modelling.
+These approach modelling pipes in heat exchangers as 1D control volume 
+arrays similar to the FVM methods I used in the early iterations of the 
+thermal hydraulics rs library. 
+
+The Modelica design approach is quite object oriented, with a strong 
+emphasis on code re-usability and modification @casella2006modelling.
+This approach was validated in some power plant components such as 
+throttle valves, mixers, tanks, pumps, and multiphase steam drums
+@casella2003modelica. These components are modelled from 
+the underlying partial differential equations (PDEs), and discretised 
+into ODEs using FEM or FVM @casella2003modelica before being solved.
+
+
+== 1D Conservation Equations
+
+The PDEs for modelica are mass, momentum and energy balances.
+
+For a 1D mass balance over a control volume $Delta V$:
+
+$ (diff m)/(diff t) = dot(m)_"out" - dot(m)_"in"  $
+
+Given a constant, negligibly expanding pipe with virtually constant 
+cross section area $A$ and volume element length $Delta x$:
+
+
+$ A Delta x (diff rho)/(diff t) = dot(m)_"out" - dot(m)_"in"  $
+$ A  (diff rho)/(diff t) = (dot(m)_"out" - dot(m)_"in")/(Delta x)  $
+
+
+Taking the limit $Delta x -> 0$:
+$ A  (diff rho)/(diff t) = -(diff dot(m))/(diff x) $
+
+We finally get the equation form used in Modelica ThermoPower 
+@casella2003modelica:
+$ A  (diff rho)/(diff t)  + (diff dot(m))/(diff x) = 0 $
 
 #bibliography("../main.bib",
 style: "chicago-author-date")
