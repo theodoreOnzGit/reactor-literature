@@ -51,9 +51,6 @@ For FOSS codes, however, it seems OpenMC and SCONE are most suitable
 for use and for re-writing in Rust because both are released under 
 the MIT license as of 2023.
 
-#bibliography("main.bib",
-style: "chicago-author-date")
-
 = Computational Fluid Dynamics 
 
 For thermal hydraulics, the OpenFOAM library @jasak2009openfoam 
@@ -69,3 +66,7 @@ in HTGRs and it has been coupled with OpenMC @novak2022coupled via
 the Multiphysics Object-Oriented Simulation Environment (MOOSE) framework.
 This was done through the Cardinal Suite of Open Source Programs 
 @novak2022coupled.
+
+#bibliography("main.bib",
+style: "chicago-author-date")
+
