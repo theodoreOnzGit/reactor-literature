@@ -10,7 +10,8 @@
 This literature review is aimed at high temperature gas cooled reactor 
 simulation, for both system code and high fidelity simulations. My aim 
 is system codes first, and I wish to develop a Free and Open Source 
-(FOSS) frameworks and software for this.
+(FOSS) frameworks and software for this. Of course, CFD and multiphyiscs 
+can come later and all be written in Rust, but this is quite important too.
 
 = Commercial and Proprietary System Codes
 
@@ -31,7 +32,7 @@ as steam generator break. For contingencies and severe accidents,
 often MELCOR is used @li2014severe as it was for the PWR.
 
 
-= Fuel Management and Fuel Cycles
+= Overview Fuel Management and Fuel Cycles
 
 In Indonesia, Batan has developed Batan MPASS for fuel management
 @hong2001nuclear.
@@ -39,7 +40,8 @@ In Indonesia, Batan has developed Batan MPASS for fuel management
 
 
 
-= Monte Carlo Codes 
+= Overview Monte Carlo Codes 
+
 
 Existing Monte Carlo codes include OpenMC @romano2015openmc written 
 in C++, SCONE written in fortran @kowalski2021scone. Also, we have 
@@ -51,7 +53,7 @@ For FOSS codes, however, it seems OpenMC and SCONE are most suitable
 for use and for re-writing in Rust because both are released under 
 the MIT license as of 2023.
 
-= Computational Fluid Dynamics 
+= Computational Fluid Dynamics and Multiphysics Platforms
 
 For thermal hydraulics, the OpenFOAM library @jasak2009openfoam 
 licensed under GNU GPL 3 has been a popular choice for coupling 
