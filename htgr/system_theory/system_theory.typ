@@ -13,6 +13,9 @@
 #show link: underline
 #show link: set text(blue)
 
+// equation numbering
+#set math.equation(numbering: "(1)")
+
 = Introduction 
 
 This document outlines some existing free and open source (FOSS) software 
@@ -110,5 +113,7 @@ We finally get the equation form used in Modelica ThermoPower
 @casella2003modelica:
 $ A  (diff rho)/(diff t)  + (diff dot(m))/(diff x) = 0 $
 
+
+//#bibliography("../main.bib",)
 #bibliography("../main.bib",
 style: "chicago-author-date")
