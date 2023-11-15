@@ -147,6 +147,10 @@ We can use the same expression for the momentum inflow and outflow
 $ (d p_x)/(d t) = sum_i^n F_x + rho_"in" A_"xs,in"  u_"x,in"^2 
 - rho_"out" A_"xs,out"  u_"x,out"^2 $
 
+For incompressible flow, with constant cross sectional area, the momentum 
+inflows and outflows essentially cancel out. For compressible flows however,
+this may not happen.
+
 For the forces along the control volume, we only consider the terms 
 present (mostly) in the Bernoulli Equation: 
 
@@ -163,18 +167,48 @@ $ tau_"wall" = 1/2 rho u_x^2 C_f $
 
 Now, in terms of force:
 
-$ F_"wall" = -1/2 rho u_x^2 C_f A_"wall" = -1/2 rho u_x^2 C_f Delta x P $
+$ F_"wall" = -1/2 rho u_x^2 C_f A_"wall" = -1/2 rho u_x^2 C_f Delta x P_w $
 
 We use the negative sign to indicate that the force is opposite the 
 direction of the flow.
 
-Where $Delta x$ is the control volume length and $P$ is the wetted 
+Where $Delta x$ is the control volume length and $P_w$ is the wetted 
 perimeter of the control volume.
 
 ==== Hydrostatic Term
 
-In terms of hydrostatics,
+In terms of hydrostatics, we only consider the forces at the entrance 
+and exit. This correlates to "gravitational" potential energy of the 
+fluid.
 
+$ F_"hydrostatic" = (rho g z)_"in" A_"in" - (rho g z)_"out" A_"out" $
+
+Again, if this is a pipe and $A_"in" = A_"out" = A_"xs"$, 
+
+$ F_"hydrostatic" = A_"xs" g [ (rho z)_"in"  - (rho z)_"out" ] $
+
+The sign convention here assumes that the inlet is at a lower x than 
+the outlet, such that forces acting on the inlet push the fluid along 
+the positive x direction, and forces at the outlet push the fluid in 
+the negative x direction.
+
+==== Pressure Term
+
+Hydrostatics aside, we also consider the fluid pressure which represents 
+correlates "elastic" potential energy of the fluid. 
+
+$ F_"pressure potential" = A_"xs" [ P_"in"  - P_"out" ] $
+
+==== Putting the terms together...
+
+$ (d p_x)/(d t) = 
+& -1/2 rho u_x^2 C_f Delta x P_w + A_"xs" g [ (rho z)_"in"  - (rho z)_"out" ] \
+& + A_"xs" [ P_"in"  - P_"out" ] + rho_"in" A_"xs,in"  u_"x,in"^2 
+- rho_"out" A_"xs,out"  u_"x,out"^2 \ $
+
+Now, 
+
+$ p_x = rho_x A_"xs,x" u_x $
 
 === Energy Balance
 
