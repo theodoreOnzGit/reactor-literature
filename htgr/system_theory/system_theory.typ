@@ -94,6 +94,8 @@ into ODEs using FEM or FVM @casella2003modelica before being solved.
 
 The PDEs for modelica are mass, momentum and energy balances.
 
+=== Mass Balance
+
 For a 1D mass balance over a control volume $Delta V$:
 
 $ (diff m)/(diff t) = dot(m)_"out" - dot(m)_"in"  $
@@ -112,6 +114,69 @@ $ A  (diff rho)/(diff t) = -(diff dot(m))/(diff x) $
 We finally get the equation form used in Modelica ThermoPower 
 @casella2003modelica:
 $ A  (diff rho)/(diff t)  + (diff dot(m))/(diff x) = 0 $
+
+=== Momentum Balance
+
+We start momentum balance off with a simple force balance 
+based on Newton's second law:
+
+$ (d p_x)/(d t) = sum_i^n F_x + p_"x,in" - p_"x,out" $
+
+This is to say, the change in momentum over the $x$ direction in the 
+control volume, which is the direction parallel to the pipe 
+flow direction, is equal to the sum of forces along the x direction 
+plus momentum inflows minus momentum outflows.
+
+For momentum flows in and out, 
+
+$ p_"x,in" = dot(m) times "momentum per unit mass" $
+
+The momentum per unit mass is essentially the velocity in the 
+x direction as $p_x = m u_x$:
+
+$ p_"x,in" = dot(m) times u_"x,in" $
+
+$dot(m)$ is the mass flow rate which can be written in terms of $u_"x,in"$
+as well
+
+$ p_"x,in" = rho_"in" A_"xs,in" u_"x,in" times u_"x,in" $
+$ p_"x,in" = rho_"in" A_"xs,in"  u_"x,in"^2 $
+
+We can use the same expression for the momentum inflow and outflow
+
+$ (d p_x)/(d t) = sum_i^n F_x + rho_"in" A_"xs,in"  u_"x,in"^2 
+- rho_"out" A_"xs,out"  u_"x,out"^2 $
+
+For the forces along the control volume, we only consider the terms 
+present (mostly) in the Bernoulli Equation: 
+
++ Friction Term
++ Hydrostatic Term
++ Pressure Term at inlets and outlets
+
+==== Friction Term
+
+The friction term is often described by the coefficient of friction.
+The magnitude of shear stress relevant to the friction term is: 
+
+$ tau_"wall" = 1/2 rho u_x^2 C_f $
+
+Now, in terms of force:
+
+$ F_"wall" = -1/2 rho u_x^2 C_f A_"wall" = -1/2 rho u_x^2 C_f Delta x P $
+
+We use the negative sign to indicate that the force is opposite the 
+direction of the flow.
+
+Where $Delta x$ is the control volume length and $P$ is the wetted 
+perimeter of the control volume.
+
+==== Hydrostatic Term
+
+In terms of hydrostatics,
+
+
+=== Energy Balance
 
 
 //#bibliography("../main.bib",)
