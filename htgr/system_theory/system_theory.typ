@@ -263,6 +263,10 @@ can essentially be used for (mostly) incompressible liquids as well:
 $   (d dot(m))/(d t)  
 & +  (C_f  P_w)/(2 rho _"xs"A^2) dot(m) |dot(m)|  +   rho g A_"xs" (diff z)/(diff x) 
  + A_"xs" (diff P)/(diff x)  = 0 \ $
+
+In modelica, the $(d dot(m))/(d t)$ term is switched off to prevent fast 
+pressure oscillations @casella2003modelica.
+
 === Energy Balance
 
 
