@@ -406,7 +406,15 @@ ineffective in transonic and supersonic flow @Epikhin2019.
 It is therefore important to know the kinds of compressible 
 flows that happen in power plants and 
 HTGRs so that we know how to model and solve them. At least in gas 
-turbine engines and such.
+turbine engines and such. 
+
+Now some useful fluid dynamics codes used in HGTR were listed in 
+Huning's review paper @Huning2021. This included the CFD code 
+Trio_U @Huning2021 which is an open source BSD-2 clause library.
+Huning also lists important scenarios to consider for 
+HTGR, including but not limited to depressurised-LOFC, 
+Air Ingress, pressurised-LOFC and water ingress @Huning2021.
+
 
 
 
