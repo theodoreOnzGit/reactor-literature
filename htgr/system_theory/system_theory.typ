@@ -90,7 +90,13 @@ the underlying partial differential equations (PDEs), and discretised
 into ODEs using FEM or FVM @casella2003modelica before being solved.
 
 
-== 1D Conservation Equations
+== 1D Conservation Equations for Pipe flow with boussinesq type fluids
+
+Boussinesq refers to the approximation where enthalpy changes due 
+to increase or decrease in density are negligible in comparison to 
+other terms. In fact, we do not consider density changes except for 
+natural convection. 
+
 
 The PDEs for modelica are mass, momentum and energy balances.
 
@@ -269,6 +275,119 @@ pressure oscillations @casella2003modelica.
 
 === Energy Balance
 
+For sensible heat energy balance, or enthalpy balance, we have 
+
+$ (diff (m tilde(h)))/(diff t) = 
+& [dot(m) tilde(h)]_"in" - 
+[dot(m) tilde(h)]_"out" + Q_"gen" + Q_"supplied"
+$
+
+Where $Q_"gen"$ is the work done by the fluid that supplies heat essentially 
+due to friction. For now, we ignore all other kind of work. 
+If we consider frictional force, we need to consider 
+
+Next, let's consider heat added through the walls as the only supply of 
+heat form the outside.
+
+$ (diff (m tilde(h)))/(diff t) = [dot(m) tilde(h)]_"in" - 
+[dot(m) tilde(h)]_"out" + Q_"gen" + q_"wall" A_"surf"  
+$
+
+
+The final form of the equation looks like @casella2003modelica:
+
+$ rho A_"xs" (diff tilde(h))/(diff t) + rho A_"xs" u (diff tilde(h))/(diff x) -  
+A_"xs" (diff p)/(diff t)  = q_"wall" P_w $
+
+I don't know whwere the $(diff p)/(diff t)$ term comes from, hardly ever 
+seen it in energy balances. Usually PV work is considered for using 
+enthalpy. My guess is that this is due to friction and whatever other 
+interaction with mechanical work.
+
+From later work in @franke2009standardization, a clue comes about 
+where I should have been using internal energy rather than the enthalpy.
+For incompressible systems with constant volume, PV is constant, so 
+it doesn't really matter whether I say it's dh or du. In compressible 
+flow, it may be more important to consider it from first principles.
+
+$ (diff (m tilde(u)))/(diff t) = 
+& [dot(m) tilde(h)]_"in" - 
+[dot(m) tilde(h)]_"out" + q_"wall" A_"surf" $
+
+Neglecting $Q_"gen"$ and substituting $m tilde(u) equiv m tilde(h) - P V$
+
+$ (diff (m h - P V))/(diff t) = 
+& [dot(m) tilde(h)]_"in" - 
+[dot(m) tilde(h)]_"out" + q_"wall" A_"surf" $
+
+
+$ (diff m h )/(diff t) 
+- (diff P V)/(diff t)
+= 
+& [dot(m) tilde(h)]_"in" - 
+[dot(m) tilde(h)]_"out" + q_"wall" A_"surf" $
+
+With constant volume,
+
+$ V (diff rho h )/(diff t) 
+- V (diff P )/(diff t)
+= 
+& [dot(m) tilde(h)]_"in" - 
+[dot(m) tilde(h)]_"out" + q_"wall" A_"surf" $
+
+$ A_"xs" Delta x (diff rho h )/(diff t) 
+- A_"xs" Delta x (diff P )/(diff t)
+= 
+& [dot(m) tilde(h)]_"in" - 
+[dot(m) tilde(h)]_"out" + q_"wall" A_"surf" $
+
+$ A_"xs" (diff rho h )/(diff t) 
+- A_"xs" (diff P )/(diff t)
+= 
+& - (diff dot(m) tilde(h))/(diff x) + q_"wall" P_w $
+
+We may neglect mass flowrate changes along x for incompressible 
+fluids and changes in $rho$ as well:
+
+$ A_"xs" rho (diff  h )/(diff t) 
+- A_"xs" (diff P )/(diff t)
+= 
+& - rho A u (diff  tilde(h))/(diff x) + q_"wall" P_w $
+
+Thus we arrive at the incompressible flow expression for 
+the 1D pipe flow @casella2003modelica.
+
+== multiphase flow
+
+Modelica bases the Flow1D2ph ("flow 1D 2 phase") solver on 
+the same mass, energy and momentum balances @casella2003modelica 
+used for the 1D pipe flow. However, it was suggested to use two 
+models for the two different phases @casella2003modelica.
+
+
+= Turbine and Compressor Modelling
+
+== Compressors 
+
+For compressors, one of the first things to consider is 
+the compressor map, which I suppose is similar to a pump curve.
+The compressor map shows the steady state behaviour of the 
+compressor at different flowrates and etc.
+
+The compressor map has a form @vepa2013dynamic:
+
+$ Psi_"comp" (Phi) = Psi_"C0" + H [
+  1 + 3/2 ((Phi - Phi_0)/F - 1)
+  -1/2 ((Phi - Phi_0)/F - 1)^3
+]
+$
+
+$Psi_"comp" (Phi)$ is the non-dimensional compressor 
+pressure which is a function of $Phi$, the non dimensional 
+mass flowrate @vepa2013dynamic. $Phi_0$ and $Psi_"C0"$ are 
+the reference steady operating points, while H and F are 
+empirical parameters which define the compressor map shape 
+@vepa2013dynamic.
 
 //#bibliography("../main.bib",)
 #bibliography("../main.bib",
