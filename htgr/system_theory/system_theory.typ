@@ -389,6 +389,9 @@ the reference steady operating points, while H and F are
 empirical parameters which define the compressor map shape 
 @vepa2013dynamic.
 
+For these, Moore-Greitzer and the non-linear extended Moore-Greitzer 
+model might work @vepa2013dynamic.
+
 //#bibliography("../main.bib",)
 #bibliography("../main.bib",
 style: "chicago-author-date")
