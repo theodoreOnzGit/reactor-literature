@@ -27,41 +27,41 @@ faster than real-time. This is an additional constraint.
 
 = Literature Review
 
-Existing system codes such as the many versions of RELAP @fletcher1992relap5
-@berry2018relap and SAM @zhou2021development are unfortunately closed source.
+Existing system codes such as the many versions of RELAP @Fletcher1992
+@Berry2018 and SAM @Zhou2021 are unfortunately closed source.
 Nevertheless, some of their working principles may be available in literature.
 We shall explore how some of them solve the thermal hydraulics equations
 here. The important thermal hydraulics for HTGR are compressible flow 
-within the primary loop @zhang2006design 
+within the primary loop @Zhang2006 
 and multiphase flow within the secondary loop for steam generators in the 
-Rankine cycle @zhang2006design if we want to simulate that as well.
+Rankine cycle @Zhang2006 if we want to simulate that as well.
 However, if we want to simulate design basis events such as water ingress
-@fang2023transport, then the interaction between multiphase 
+@Fang2023, then the interaction between multiphase 
 flow (water) and single phase compressible flow (gas) may be quite 
 important.
 
 Previous work done here includes the Engineering Simulation System (ESS)
 designed to model startup, shutdown and accident scenarios for the HTR-PM 
-@sui2014engineering. This ESS in turn uses vPower for its thermal hydraulics 
-@sui2014engineering. The vPower platform simulation platform was developed 
-by Beijing Neowise Technology Company Ltd @tang2017development. vPower 
+@Sui2014. This ESS in turn uses vPower for its thermal hydraulics 
+@Sui2014. The vPower platform simulation platform was developed 
+by Beijing Neowise Technology Company Ltd @Tang2017. vPower 
 is responsible for the most of the secondary loop and control systems 
 while Thermix/BLAST is used for core thermal hydraulics and neutronics 
-@tang2017development. Thermix was developed by Julich Nuclear research 
-center of Germany while BLAST was developed by ORNL @tang2017development.
+@Tang2017. Thermix was developed by Julich Nuclear research 
+center of Germany while BLAST was developed by ORNL @Tang2017.
 Unfortunately, this is not a 100% FOSS system, which makes it difficult 
 for researchers to repeat unless they already have access to the software.
 
 Now, ANL's System Analysis Module code based on MOOSE is also another 
 well known system code, but it is closed source and catered more for 
-incompressible but thermally expandable flows @hu2021sam. Therefore,
+incompressible but thermally expandable flows @Hu2021. Therefore,
 it has little use here. However, Modelica's open source module 
 has been used for studying Small Modular HTGRs in the context of 
-desalination @tassone2021object. In this study, the NuKomp 
-1.2 and the ThermoPower library @casella2009thermopower within modelica 
+desalination @Tassone2021. In this study, the NuKomp 
+1.2 and the ThermoPower library @Casella2009 within modelica 
 were used. Both these modelica libraries have been used in modelling 
-multiphase flow phenomena in the IRIS PWR @cammi2011object. The 
-ThermoPower library @casella2009thermopower in modelica is open sourced
+multiphase flow phenomena in the IRIS PWR @Cammi2011. The 
+ThermoPower library @Casella2009 in modelica is open sourced
 and licensed under the modelica library 2.0 and its code is available on 
 a #link("https://github.com/casella/ThermoPower")[github repository]. This
 license seems to be mostly 
@@ -74,20 +74,20 @@ to start.
 
 The ThermoPower modelica library has several components, including using 
 Finite Element Modelling (FEM) for its heat exchangers 
-@casella2003modelling as opposed to Finite Volume Modelling used in 
-OpenFOAM @jasak2009openfoam. Nevertheless, it is able to handle 
+@Casella2003a as opposed to Finite Volume Modelling used in 
+OpenFOAM @Jasak2009. Nevertheless, it is able to handle 
 compressible flows, which makes it quite useful for power plant modelling.
 These approach modelling pipes in heat exchangers as 1D control volume 
 arrays similar to the FVM methods I used in the early iterations of the 
 thermal hydraulics rs library. 
 
 The Modelica design approach is quite object oriented, with a strong 
-emphasis on code re-usability and modification @casella2006modelling.
+emphasis on code re-usability and modification @Casella2006.
 This approach was validated in some power plant components such as 
 throttle valves, mixers, tanks, pumps, and multiphase steam drums
-@casella2003modelica. These components are modelled from 
+@Casella2003. These components are modelled from 
 the underlying partial differential equations (PDEs), and discretised 
-into ODEs using FEM or FVM @casella2003modelica before being solved.
+into ODEs using FEM or FVM @Casella2003 before being solved.
 
 
 == 1D Conservation Equations for Pipe flow with boussinesq type fluids
@@ -118,7 +118,7 @@ Taking the limit $Delta x -> 0$:
 $ A  (diff rho)/(diff t) = -(diff dot(m))/(diff x) $
 
 We finally get the equation form used in Modelica ThermoPower 
-@casella2003modelica:
+@Casella2003:
 $ A  (diff rho)/(diff t)  + (diff dot(m))/(diff x) = 0 $
 
 === Momentum Balance
@@ -263,7 +263,7 @@ $   (d dot(m))/(d t)
 
 If we want our equations to account for directionality, then we replace 
 the square term by an absolute value. Doing so, we arrive at the modelica 
-expression for 1 dimensional water pipe flow @casella2003modelica, which 
+expression for 1 dimensional water pipe flow @Casella2003, which 
 can essentially be used for (mostly) incompressible liquids as well:
 
 $   (d dot(m))/(d t)  
@@ -271,7 +271,7 @@ $   (d dot(m))/(d t)
  + A_"xs" (diff P)/(diff x)  = 0 \ $
 
 In modelica, the $(d dot(m))/(d t)$ term is switched off to prevent fast 
-pressure oscillations @casella2003modelica.
+pressure oscillations @Casella2003.
 
 === Energy Balance
 
@@ -294,7 +294,7 @@ $ (diff (m tilde(h)))/(diff t) = [dot(m) tilde(h)]_"in" -
 $
 
 
-The final form of the equation looks like @casella2003modelica:
+The final form of the equation looks like @Casella2003:
 
 $ rho A_"xs" (diff tilde(h))/(diff t) + rho A_"xs" u (diff tilde(h))/(diff x) -  
 A_"xs" (diff p)/(diff t)  = q_"wall" P_w $
@@ -304,7 +304,7 @@ seen it in energy balances. Usually PV work is considered for using
 enthalpy. My guess is that this is due to friction and whatever other 
 interaction with mechanical work.
 
-From later work in @franke2009standardization, a clue comes about 
+From later work in @Franke2009, a clue comes about 
 where I should have been using internal energy rather than the enthalpy.
 For incompressible systems with constant volume, PV is constant, so 
 it doesn't really matter whether I say it's dh or du. In compressible 
@@ -355,14 +355,14 @@ $ A_"xs" rho (diff  h )/(diff t)
 & - rho A u (diff  tilde(h))/(diff x) + q_"wall" P_w $
 
 Thus we arrive at the incompressible flow expression for 
-the 1D pipe flow @casella2003modelica.
+the 1D pipe flow @Casella2003.
 
 == multiphase flow
 
 Modelica bases the Flow1D2ph ("flow 1D 2 phase") solver on 
-the same mass, energy and momentum balances @casella2003modelica 
+the same mass, energy and momentum balances @Casella2003 
 used for the 1D pipe flow. However, it was suggested to use two 
-models for the two different phases @casella2003modelica.
+models for the two different phases @Casella2003.
 
 
 = Turbine and Compressor Modelling
@@ -374,7 +374,7 @@ the compressor map, which I suppose is similar to a pump curve.
 The compressor map shows the steady state behaviour of the 
 compressor at different flowrates and etc.
 
-The compressor map has a form @vepa2013dynamic:
+The compressor map has a form @Vepa2013:
 
 $ Psi_"comp" (Phi) = Psi_"C0" + H [
   1 + 3/2 ((Phi - Phi_0)/F - 1)
@@ -384,13 +384,32 @@ $
 
 $Psi_"comp" (Phi)$ is the non-dimensional compressor 
 pressure which is a function of $Phi$, the non dimensional 
-mass flowrate @vepa2013dynamic. $Phi_0$ and $Psi_"C0"$ are 
+mass flowrate @Vepa2013. $Phi_0$ and $Psi_"C0"$ are 
 the reference steady operating points, while H and F are 
 empirical parameters which define the compressor map shape 
-@vepa2013dynamic.
+@Vepa2013.
 
 For these, Moore-Greitzer and the non-linear extended Moore-Greitzer 
-model might work @vepa2013dynamic.
+model might work @Vepa2013.
+
+
+= Nonlinear equation solving 
+
+Like it or not, the 1D compressible gas are highly nonlinear.
+Modelica has means to solve nonlinear equations, as do OpenFOAM.
+
+The pimple algorithm used for rhoPimpleFoam may be a good place 
+to start. The notes on CFD by Greenshields may be a good reference
+@Greenshields2022. For weakly compressible flows, at low mach 
+number, the SIMPLE, PISO and PIMPLE algorithm work well, but are 
+ineffective in transonic and supersonic flow @Epikhin2019.
+It is therefore important to know the kinds of compressible 
+flows that happen in power plants and 
+HTGRs so that we know how to model and solve them. At least in gas 
+turbine engines and such.
+
+
+
 
 //#bibliography("../main.bib",)
 #bibliography("../main.bib",

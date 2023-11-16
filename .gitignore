@@ -15,3 +15,7 @@ Cargo.lock
 
 # typst output files 
 *.pdf
+
+#autosave 
+*.bak 
+*.sav

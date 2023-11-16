@@ -17,25 +17,25 @@ can come later and all be written in Rust, but this is quite important too.
 
 So far, for commercial codes, there is the Very Superior Old Programs 
 (VSOP) suite which has been used for Anticipated Transient without 
-SCRAM in HTR studies @bakhri2018steady. Of course, there is the classic 
-RELAP5 @fletcher1992relap5 and Relap-7 @berry2018relap system codes 
+SCRAM in HTR studies @Bakhri2018. Of course, there is the classic 
+RELAP5 @Fletcher1992 and Relap-7 @Berry2018 system codes 
 traditionally used for system level simulation. Also we have the 
-system analysis module (SAM) developed by ANL @zhou2021development.
+system analysis module (SAM) developed by ANL @Zhou2021.
 Some important accidents 
 to study include steam generator rupture, where the following reaction 
-occurs @bakhri2018steady:
+occurs @Bakhri2018:
 
 $ H_2 O (g) + C (s) -> C O (g) + H_2 (g) $
 
 Such chemical are good to simulate as well, especially for transients such 
 as steam generator break. For contingencies and severe accidents,
-often MELCOR is used @li2014severe as it was for the PWR.
+often MELCOR is used @Li2014 as it was for the PWR.
 
 
 = Overview Fuel Management and Fuel Cycles
 
 In Indonesia, Batan has developed Batan MPASS for fuel management
-@hong2001nuclear.
+@Hong2001.
 
 
 
@@ -43,11 +43,11 @@ In Indonesia, Batan has developed Batan MPASS for fuel management
 = Overview Monte Carlo Codes 
 
 
-Existing Monte Carlo codes include OpenMC @romano2015openmc written 
-in C++, SCONE written in fortran @kowalski2021scone. Also, we have 
-the classic codes such as Serpent @leppanen2013serpent and MCNP 
-@brown2002mcnp. There is also RMC @wang2015rmc and 
-COG @buck1999applications. 
+Existing Monte Carlo codes include OpenMC @Romano2015 written 
+in C++, SCONE written in fortran @Kowalski2021. Also, we have 
+the classic codes such as Serpent @Leppaenen2013 and MCNP 
+@Brown2002. There is also RMC @Wang2015 and 
+COG @Buck1999. 
 
 For FOSS codes, however, it seems OpenMC and SCONE are most suitable 
 for use and for re-writing in Rust because both are released under 
@@ -55,19 +55,19 @@ the MIT license as of 2023.
 
 = Computational Fluid Dynamics and Multiphysics Platforms
 
-For thermal hydraulics, the OpenFOAM library @jasak2009openfoam 
+For thermal hydraulics, the OpenFOAM library @Jasak2009 
 licensed under GNU GPL 3 has been a popular choice for coupling 
 with both deterministic and monte carlo (stochastic) neutronics 
-simulation. For deterministic codes, the GeN-Foam @fiorina2015gen
+simulation. For deterministic codes, the GeN-Foam @Fiorina2015
 code has been developed for reactor multiphyiscs and transients.
 For coupling with monte carlo codes, OpenFOAM has been coupled with 
-Serpent before @castagna2020serpent.
+Serpent before @Castagna2020.
 
 More recently, the Nek5000 platform has been used for thermal hydraulics 
-in HTGRs and it has been coupled with OpenMC @novak2022coupled via 
+in HTGRs and it has been coupled with OpenMC @Novak2022 via 
 the Multiphysics Object-Oriented Simulation Environment (MOOSE) framework.
 This was done through the Cardinal Suite of Open Source Programs 
-@novak2022coupled.
+@Novak2022.
 
 #bibliography("main.bib",
 style: "chicago-author-date")
