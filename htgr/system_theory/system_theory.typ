@@ -415,6 +415,13 @@ Huning also lists important scenarios to consider for
 HTGR, including but not limited to depressurised-LOFC, 
 Air Ingress, pressurised-LOFC and water ingress @Huning2021.
 
+Another notable work is the High Temperature Test Facility (HTTF) in 
+Oregon State University spearheaded by Professor Isabela Gutowska 
+@Gutowska2019. In HTTF simulation work, I did not see much
+compressible flow analysis for sonic or transonic flow.
+
+Probably need to read up more though...
+
 
 
 
