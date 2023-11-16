@@ -208,8 +208,61 @@ $ (d p_x)/(d t) =
 
 Now, 
 
-$ p_x = rho_x A_"xs,x" u_x $
+$ p_x = u_x rho_x A_"xs,x" Delta x   $, 
 
+and we can substitute this in:
+
+$ Delta x A_"xs" (d rho_x u_x)/(d t) = 
+& -1/2 rho u_x^2 C_f Delta x P_w + A_"xs" g [ (rho z)_"in"  - (rho z)_"out" ] \
+& + A_"xs" [ P_"in"  - P_"out" ] + rho_"in" A_"xs,in"  u_"x,in"^2 
+- rho_"out" A_"xs,out"  u_"x,out"^2 \ $
+
+Divide throughout by $Delta x$,
+
+$  A_"xs" (d rho_x u_x)/(d t) = 
+& -1/2 rho u_x^2 C_f  P_w + A_"xs" g [ (rho z)_"in"  - (rho z)_"out" ]/(Delta x) \
+& + A_"xs" [ P_"in"  - P_"out" ]/(Delta x) + (rho_"in" A_"xs,in"  u_"x,in"^2 
+- rho_"out" A_"xs,out"  u_"x,out"^2)/(Delta x) \ $
+
+Let's put everything in terms of mass flowrate $dot(m) = rho A u$
+
+$   (d dot(m))/(d t) = 
+& -1/2 rho (dot(m)/(rho A_"xs") )^2 C_f  P_w + A_"xs" g [ (rho z)_"in"  - (rho z)_"out" ]/(Delta x) \
+& + A_"xs" [ P_"in"  - P_"out" ]/(Delta x) + (rho_"in" A_"xs,in"  (dot(m)/(rho A))_"in"^2 
+- rho_"out" A_"xs,out"  (dot(m)/(rho A))_"out"^2)/(Delta x) \ $
+
+$   (d dot(m))/(d t) = 
+& -1/2  dot(m)^2/(rho A_"xs"^2)  C_f  P_w + A_"xs" g [ (rho z)_"in"  - (rho z)_"out" ]/(Delta x) \
+& + A_"xs" [ P_"in"  - P_"out" ]/(Delta x) + (rho_"in" A_"xs,in"  (dot(m)/(rho A))_"in"^2 
+- rho_"out" A_"xs,out"  (dot(m)/(rho A))_"out"^2)/(Delta x) \ $
+
+Limit $Delta x -> 0$:
+
+$   (d dot(m))/(d t) = 
+& -1/2  dot(m)^2/(rho _"xs"A^2)  C_f  P_w - A_"xs" g  diff/(diff x) (rho z) \
+& - A_"xs" diff/(diff x) [ P ] - diff/(diff x) 
+[rho_"in" A_"xs,in"  (dot(m)/(rho A))_"in"^2 ] \ $
+
+In the case where the fluid is essentially incompressible, such as water,
+the changes in fluid velocity, fluid density and cross sectional area 
+at the inlet and outlet are essentially negligible or zero:
+
+$   (d dot(m))/(d t) = 
+& -1/2  dot(m)^2/(rho _"xs"A^2)  C_f  P_w - A_"xs" g  diff/(diff x) (rho z) 
+ - A_"xs" diff/(diff x) [ P ] \ $
+
+$   (d dot(m))/(d t)  
+& +  (C_f  P_w)/(2 rho A_"xs"^2) dot(m)^2  +   rho g A_"xs" (diff z)/(diff x) 
+ + A_"xs" (diff P)/(diff x)  = 0 \ $
+
+If we want our equations to account for directionality, then we replace 
+the square term by an absolute value. Doing so, we arrive at the modelica 
+expression for 1 dimensional water pipe flow @casella2003modelica, which 
+can essentially be used for (mostly) incompressible liquids as well:
+
+$   (d dot(m))/(d t)  
+& +  (C_f  P_w)/(2 rho _"xs"A^2) dot(m) |dot(m)|  +   rho g A_"xs" (diff z)/(diff x) 
+ + A_"xs" (diff P)/(diff x)  = 0 \ $
 === Energy Balance
 
 
