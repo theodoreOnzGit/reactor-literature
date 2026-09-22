@@ -19,6 +19,8 @@ by the document itself or by its publisher:
 | File | Document | Licence |
 |---|---|---|
 | `ong/tuas-theodore-ong.pdf` | T.K.C. Ong, S. Xiao, P.F. Peterson, "An open-source Thermo-hydraulic Uniphase Advection and Convection Solver for Salt Flows (TUAS)", *International Journal of Advanced Nuclear Reactor Design and Technology* 6 (2024) 281–301, <https://doi.org/10.1016/j.jandt.2025.03.006> | The article itself states: "This is an open access article under the CC BY license (<http://creativecommons.org/licenses/by/4.0/>)." **Where:** PDF page 1, bottom of the page, under the DOI. |
+| `ong/ong2023-ms-thesis-isothermal-flow-digital-twin-ciet.pdf` | T.K.C. Ong, *Development of an Isothermal-Flow Digital Twin for the Compact Integral Effects Test*, MS thesis, UC Berkeley, 2023 | The repository owner's own thesis; copyright is his ("Copyright 2023"). **Where:** PDF page 2. |
+| `ong/ong2024-phd-dissertation-digital-twins-neutronics-feedback.pdf` | T.K.C. Ong, *Digital Twins as Testbeds for Iterative Simulated Neutronics Feedback Controller Development*, PhD dissertation, UC Berkeley, 2024, <https://escholarship.org/uc/item/0362h3zf> | The repository owner's own dissertation; copyright is his ("Copyright 2024"). **Where:** PDF page 3. |
 
 ## 2. Open access, CC BY
 
@@ -27,6 +29,8 @@ by the document itself or by its publisher:
 | `cc-by/she2021pangu.pdf` | D. She, F. Chen, B. Xia, L. Shi, "Simulation of the HTR-10 Operation History With the PANGU Code", *Frontiers in Energy Research* 9:704116 (2021), <https://doi.org/10.3389/fenrg.2021.704116> | "distributed under the terms of the Creative Commons Attribution License (CC BY)" **Where:** PDF page 9, the licence note in the article's back matter. |
 | `cc-by/pichler2020-316l-thermophysical-properties.pdf` | P. Pichler, B.J. Simonds, J.W. Sowards, G. Pottlacher, "Measurements of thermophysical properties of solid and liquid NIST SRM 316L stainless steel", *Journal of Materials Science* (Springer), <https://doi.org/10.1007/s10853-019-04261-6> | Creative Commons licence; also "Official contribution of the National Institute of Standards and Technology; not subject to copyright in the United States" **Where:** the NIST statement on PDF page 1; the Creative Commons statement on PDF page 12. |
 | `cc-by/gomezzarzuela2021-1d-bubbly-flow-solver.pdf` | C. Gómez-Zarzuela, C. Peña-Monferrer, S. Chiva, R. Miró, "Development and validation of a one-dimensional solver in a CFD platform for boiling flows in bubbly regimes", *Progress in Nuclear Energy* 134 (2021) 103680, <https://doi.org/10.1016/j.pnucene.2021.103680> | "This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/)" **Where:** PDF page 1, bottom of the page, under the DOI. |
+| `cc-by/putra2021-htr10-otto-dem-monte-carlo.pdf` | F. Putra et al., "HTR-10 OTTO Cycle Depletion Simulation Using Discrete Element Method Coupled Monte Carlo", *J. Phys.: Conf. Ser.* 2048 (2021) 012031, <https://doi.org/10.1088/1742-6596/2048/1/012031> | "Content from this work may be used under the terms of the Creative Commons Attribution 3.0 licence." **Where:** PDF page 2 (the paper's first page), footer. |
+| `cc-by/fang2021-htgr-fission-product-release-fresco.pdf` | C. Fang, C. Li, J. Cao, K. Liu, S. Fang, "Analysis of Fission Products' Release in Pebble-Bed High-Temperature Gas-Cooled Reactor Fuel Elements Using a Modified FRESCO II Numerical Model", *Science and Technology of Nuclear Installations* 2021, 6627789, <https://doi.org/10.1155/2021/6627789> | "open access article distributed under the Creative Commons Attribution License". **Where:** PDF page 1. |
 
 CC BY requires attribution: the authors, titles and DOIs above are that
 attribution, and the files are unmodified.
@@ -54,14 +58,24 @@ report that is credited to a third party keeps that party's copyright.
 | File | Document | Prepared by | Published |
 |---|---|---|---|
 | `nrc/nureg-cr-2671-marviken.pdf` | NUREG/CR-2671 (MXC-301), *The Marviken Full Scale Critical Flow Tests: Summary Report*, Joint Reactor Safety Experiments in the Marviken Power Station, Sweden | Marviken project, for the U.S. NRC | 1982 |
+| `nrc/nureg-cr-0417-saha-critical-flow-review-1978.pdf` | P. Saha, *A Review of Two-Phase Steam-Water Critical Flow Models with Emphasis on Thermal Nonequilibrium*, NUREG/CR-0417 (BNL-NUREG-50907), Brookhaven National Laboratory, for the U.S. NRC | September 1978 |
+| `nrc/nrc-hrtd-ge-bwr4-atm-ch7.1-fukushima.pdf` | *GE BWR/4 Advanced Technology Manual*, Chapter 7.1, "Fukushima Dai-ichi Earthquake and Tsunami Event" (Rev 0114), U.S. NRC Human Resources Training and Development (HRTD) course material | U.S. NRC (HRTD) | 2014 (Rev 0114) |
 
 **Where to check:** the NRC Site Disclaimer page quoted above
 (<https://www.nrc.gov/about-nrc/site-disclaimer>); it covers every NRC document
 here, and each document is the NRC's own publication.
 
+The HRTD manual chapter is NRC training material; per the disclaimer's last sentence, any figure in it credited to a third party (for example General Electric) keeps that party's copyright.
+
 NUREG/CR-2671 was prepared by the Marviken project under NRC sponsorship and
 published by the NRC in its NUREG series; it is included on the NRC statement
 above, as an NRC publication.
+
+### CC BY-SA
+
+| File | Document | Licence statement |
+|---|---|---|
+| `cc-by-sa/dietrich-kit-sr-7726-melcor-coupling.pdf` | P. Dietrich, *Expansion of the Severe Accident Code MELCOR by Coupling External Models*, KIT Scientific Reports 7726, Karlsruhe Institute of Technology | Licensed under the Creative Commons Attribution-Share Alike 3.0 DE licence (CC BY-SA 3.0 DE); redistributed unmodified, with attribution. **Where:** PDF page 6, the imprint page. |
 
 ## 4. Other U.S. Government reports
 
@@ -85,5 +99,7 @@ each marked for unlimited distribution.
 Added on 22 September 2026: the TUAS paper from the owner's own collection;
 the other five moved from `crates/kovan-literature/open/` in OUTRAM PARK,
 where their metadata, extracted text and BibTeX remain. Gómez-Zarzuela et al.
-and RFP-936 were added the same day from the owner's collection. Licence details were
+and RFP-936 were added the same day from the owner's collection, and the two
+theses, Putra et al., Fang et al., Dietrich, Saha and the HRTD chapter from
+the owner's Downloads folder. Licence details were
 read from each document's own statements, quoted above.
