@@ -16,7 +16,8 @@ Cargo.lock
 # typst output files 
 *.pdf
 # ...except the Kovan open-corpus source documents, which are the point
-!kovan-open-corpus/**/*.pdf
+!kovan-standard-open-corpus/**/*.pdf
+!theodore-open-corpus/**/*.pdf
 
 #autosave 
 *.bak 
