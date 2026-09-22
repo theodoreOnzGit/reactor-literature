@@ -64,9 +64,9 @@ on its Zenodo DOI record (checked 22 September 2026). The PDFs do not restate
 the licence; the DOI record is the source for it.
 
 **Where to check:** open each paper's DOI link in the table below; the Zenodo
-record page shows the licence ("Creative Commons Attribution 4.0
-International") in its Rights section. The same is readable from
-`https://zenodo.org/api/records/<record number>` (field `metadata.license`).
+record page lists the licence. It was checked through Zenodo's API,
+`https://zenodo.org/api/records/<record number>`, whose `metadata.license`
+field reads `cc-by-4.0` for all four.
 
 | File | Paper | DOI |
 |---|---|---|
