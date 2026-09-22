@@ -36,6 +36,11 @@ report that is credited to a third party keeps that party's copyright.
 Each document is the NRC's own publication, retrieved from the NRC's ADAMS
 public library under its accession number.
 
+**Where to check:** the NRC Site Disclaimer page quoted above
+(<https://www.nrc.gov/about-nrc/site-disclaimer>); it covers every NRC document
+in this table. The documents themselves carry no licence statement of their
+own.
+
 | File | Document | Prepared by | Published |
 |---|---|---|---|
 | `nrc/ML15334A199.pdf` | WASH-1400 (NUREG-75/014), *Reactor Safety Study: An Assessment of Accident Risks in U.S. Commercial Nuclear Power Plants*, Executive Summary and Main Report (second printing; the appendices are listed but not included). This copy is NRC official hearing exhibit RIV000147 (Indian Point license renewal), held in ADAMS | U.S. Nuclear Regulatory Commission | October 1975 |
@@ -57,6 +62,11 @@ Reactors** (Torino, Italy, 19–23 April 2026; proceedings ISBN
 979-12-81583-46-7), each deposited on Zenodo under **CC BY 4.0**, as recorded
 on its Zenodo DOI record (checked 22 September 2026). The PDFs do not restate
 the licence; the DOI record is the source for it.
+
+**Where to check:** open each paper's DOI link in the table below; the Zenodo
+record page shows the licence ("Creative Commons Attribution 4.0
+International") in its Rights section. The same is readable from
+`https://zenodo.org/api/records/<record number>` (field `metadata.license`).
 
 | File | Paper | DOI |
 |---|---|---|

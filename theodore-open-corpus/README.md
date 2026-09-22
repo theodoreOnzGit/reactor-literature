@@ -18,15 +18,15 @@ by the document itself or by its publisher:
 
 | File | Document | Licence |
 |---|---|---|
-| `ong/tuas-theodore-ong.pdf` | T.K.C. Ong, S. Xiao, P.F. Peterson, "An open-source Thermo-hydraulic Uniphase Advection and Convection Solver for Salt Flows (TUAS)", *International Journal of Advanced Nuclear Reactor Design and Technology* 6 (2024) 281–301, <https://doi.org/10.1016/j.jandt.2025.03.006> | The article itself states: "This is an open access article under the CC BY license (<http://creativecommons.org/licenses/by/4.0/>)." |
+| `ong/tuas-theodore-ong.pdf` | T.K.C. Ong, S. Xiao, P.F. Peterson, "An open-source Thermo-hydraulic Uniphase Advection and Convection Solver for Salt Flows (TUAS)", *International Journal of Advanced Nuclear Reactor Design and Technology* 6 (2024) 281–301, <https://doi.org/10.1016/j.jandt.2025.03.006> | The article itself states: "This is an open access article under the CC BY license (<http://creativecommons.org/licenses/by/4.0/>)." **Where:** PDF page 1, bottom of the page, under the DOI. |
 
 ## 2. Open access, CC BY
 
 | File | Paper | Licence statement |
 |---|---|---|
-| `cc-by/she2021pangu.pdf` | D. She, F. Chen, B. Xia, L. Shi, "Simulation of the HTR-10 Operation History With the PANGU Code", *Frontiers in Energy Research* 9:704116 (2021), <https://doi.org/10.3389/fenrg.2021.704116> | "distributed under the terms of the Creative Commons Attribution License (CC BY)" |
-| `cc-by/pichler2020-316l-thermophysical-properties.pdf` | P. Pichler, B.J. Simonds, J.W. Sowards, G. Pottlacher, "Measurements of thermophysical properties of solid and liquid NIST SRM 316L stainless steel", *Journal of Materials Science* (Springer), <https://doi.org/10.1007/s10853-019-04261-6> | Creative Commons licence; also "Official contribution of the National Institute of Standards and Technology; not subject to copyright in the United States" |
-| `cc-by/gomezzarzuela2021-1d-bubbly-flow-solver.pdf` | C. Gómez-Zarzuela, C. Peña-Monferrer, S. Chiva, R. Miró, "Development and validation of a one-dimensional solver in a CFD platform for boiling flows in bubbly regimes", *Progress in Nuclear Energy* 134 (2021) 103680, <https://doi.org/10.1016/j.pnucene.2021.103680> | "This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/)" |
+| `cc-by/she2021pangu.pdf` | D. She, F. Chen, B. Xia, L. Shi, "Simulation of the HTR-10 Operation History With the PANGU Code", *Frontiers in Energy Research* 9:704116 (2021), <https://doi.org/10.3389/fenrg.2021.704116> | "distributed under the terms of the Creative Commons Attribution License (CC BY)" **Where:** PDF page 9, the licence note in the article's back matter. |
+| `cc-by/pichler2020-316l-thermophysical-properties.pdf` | P. Pichler, B.J. Simonds, J.W. Sowards, G. Pottlacher, "Measurements of thermophysical properties of solid and liquid NIST SRM 316L stainless steel", *Journal of Materials Science* (Springer), <https://doi.org/10.1007/s10853-019-04261-6> | Creative Commons licence; also "Official contribution of the National Institute of Standards and Technology; not subject to copyright in the United States" **Where:** the NIST statement on PDF page 1; the Creative Commons statement on PDF page 12. |
+| `cc-by/gomezzarzuela2021-1d-bubbly-flow-solver.pdf` | C. Gómez-Zarzuela, C. Peña-Monferrer, S. Chiva, R. Miró, "Development and validation of a one-dimensional solver in a CFD platform for boiling flows in bubbly regimes", *Progress in Nuclear Energy* 134 (2021) 103680, <https://doi.org/10.1016/j.pnucene.2021.103680> | "This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/)" **Where:** PDF page 1, bottom of the page, under the DOI. |
 
 CC BY requires attribution: the authors, titles and DOIs above are that
 attribution, and the files are unmodified.
@@ -55,6 +55,10 @@ report that is credited to a third party keeps that party's copyright.
 |---|---|---|---|
 | `nrc/nureg-cr-2671-marviken.pdf` | NUREG/CR-2671 (MXC-301), *The Marviken Full Scale Critical Flow Tests: Summary Report*, Joint Reactor Safety Experiments in the Marviken Power Station, Sweden | Marviken project, for the U.S. NRC | 1982 |
 
+**Where to check:** the NRC Site Disclaimer page quoted above
+(<https://www.nrc.gov/about-nrc/site-disclaimer>); it covers every NRC document
+here, and each document is the NRC's own publication.
+
 NUREG/CR-2671 was prepared by the Marviken project under NRC sponsorship and
 published by the NRC in its NUREG series; it is included on the NRC statement
 above, as an NRC publication.
@@ -67,14 +71,14 @@ each marked for unlimited distribution.
 
 | File | Document | Basis |
 |---|---|---|
-| `us-doe/kim1975-thermophysical-properties-stainless-steels.pdf` | C.S. Kim, *Thermophysical Properties of Stainless Steels*, ANL-75-55, Argonne National Laboratory, prepared for the U.S. Energy Research and Development Administration under Contract W-31-109-Eng-38, September 1975 | The title page states "DISTRIBUTION OF THIS DOCUMENT IS UNLIMITED" (checked on the scanned title page, 22 September 2026) |
-| `us-doe/rfp-936-critical-radii-pu239-u233-1967.pdf` | D.R. Ferguson, D.C. Coonfield, *Calculated Critical Radii of Spheres of Plutonium 239 and Uranium 233 with Various Spherical Reflectors*, RFP-936, The Dow Chemical Company, Rocky Flats Division, for the U.S. Atomic Energy Commission under Contract AT(29-1)-1106, 9 June 1967 | The report page states "DISTRIBUTION OF THIS DOCUMENT IS UNLIMITED" (checked on the scanned page, 22 September 2026) |
+| `us-doe/kim1975-thermophysical-properties-stainless-steels.pdf` | C.S. Kim, *Thermophysical Properties of Stainless Steels*, ANL-75-55, Argonne National Laboratory, prepared for the U.S. Energy Research and Development Administration under Contract W-31-109-Eng-38, September 1975 | The title page states "DISTRIBUTION OF THIS DOCUMENT IS UNLIMITED" (checked on the scanned title page, 22 September 2026) **Where:** PDF page 1 (the scanned cover), bottom right. |
+| `us-doe/rfp-936-critical-radii-pu239-u233-1967.pdf` | D.R. Ferguson, D.C. Coonfield, *Calculated Critical Radii of Spheres of Plutonium 239 and Uranium 233 with Various Spherical Reflectors*, RFP-936, The Dow Chemical Company, Rocky Flats Division, for the U.S. Atomic Energy Commission under Contract AT(29-1)-1106, 9 June 1967 | The report page states "DISTRIBUTION OF THIS DOCUMENT IS UNLIMITED" (checked on the scanned page, 22 September 2026) **Where:** PDF page 5 (the report's title page), bottom right. |
 
 ## 5. European Commission (JRC)
 
 | File | Document | Basis |
 |---|---|---|
-| `jrc/kjna28712enn.pdf` | K. Kugeler, H. Nabielek, D. Buckthorpe, *The High Temperature Gas-cooled Reactor: Safety considerations of the (V)HTR-Modul*, EUR 28712 EN, Publications Office of the European Union, 2017, <https://doi.org/10.2760/270321> | The report states: "Reuse is authorised provided the source is acknowledged. The reuse policy of European Commission documents is regulated by Decision 2011/833/EU (OJ L 330, 14.12.2011, p. 39)." Acknowledged here. |
+| `jrc/kjna28712enn.pdf` | K. Kugeler, H. Nabielek, D. Buckthorpe, *The High Temperature Gas-cooled Reactor: Safety considerations of the (V)HTR-Modul*, EUR 28712 EN, Publications Office of the European Union, 2017, <https://doi.org/10.2760/270321> | The report states: "Reuse is authorised provided the source is acknowledged. The reuse policy of European Commission documents is regulated by Decision 2011/833/EU (OJ L 330, 14.12.2011, p. 39)." Acknowledged here. **Where:** PDF page 2, the legal notice. |
 
 ## Provenance
 
