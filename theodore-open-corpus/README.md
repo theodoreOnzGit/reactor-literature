@@ -19,7 +19,6 @@ by the document itself or by its publisher:
 | File | Document | Licence |
 |---|---|---|
 | `ong/tuas-theodore-ong.pdf` | T.K.C. Ong, S. Xiao, P.F. Peterson, "An open-source Thermo-hydraulic Uniphase Advection and Convection Solver for Salt Flows (TUAS)", *International Journal of Advanced Nuclear Reactor Design and Technology* 6 (2024) 281–301, <https://doi.org/10.1016/j.jandt.2025.03.006> | The article itself states: "This is an open access article under the CC BY license (<http://creativecommons.org/licenses/by/4.0/>)." **Where:** PDF page 1, bottom of the page, under the DOI. |
-| `ong/ong2023-ms-thesis-isothermal-flow-digital-twin-ciet.pdf` | T.K.C. Ong, *Development of an Isothermal-Flow Digital Twin for the Compact Integral Effects Test*, MS thesis, UC Berkeley, 2023 | The repository owner's own thesis; copyright is his ("Copyright 2023"). **Where:** PDF page 2. |
 | `ong/ong2024-phd-dissertation-digital-twins-neutronics-feedback.pdf` | T.K.C. Ong, *Digital Twins as Testbeds for Iterative Simulated Neutronics Feedback Controller Development*, PhD dissertation, UC Berkeley, 2024, <https://escholarship.org/uc/item/0362h3zf> | The repository owner's own dissertation; copyright is his ("Copyright 2024"). **Where:** PDF page 3. |
 
 ## 2. Open access, CC BY
@@ -99,7 +98,7 @@ each marked for unlimited distribution.
 Added on 22 September 2026: the TUAS paper from the owner's own collection;
 the other five moved from `crates/kovan-literature/open/` in OUTRAM PARK,
 where their metadata, extracted text and BibTeX remain. Gómez-Zarzuela et al.
-and RFP-936 were added the same day from the owner's collection, and the two
-theses, Putra et al., Fang et al., Dietrich, Saha and the HRTD chapter from
+and RFP-936 were added the same day from the owner's collection, and the PhD
+dissertation, Putra et al., Fang et al., Dietrich, Saha and the HRTD chapter from
 the owner's Downloads folder. Licence details were
 read from each document's own statements, quoted above.
