@@ -8,10 +8,13 @@ never shipped in the Kovan crate. Only documents in this folder are
 hardcoded into Kovan. The owner's other open literature is in
 [`../theodore-open-corpus/`](../theodore-open-corpus/).
 
-Every document here is redistributable, on one of two grounds:
+Every document here is redistributable, on one of three grounds:
 
 1. **U.S. NRC documents: open access, U.S. Government Work.**
 2. **Open access under the Creative Commons Attribution licence (CC BY 4.0).**
+3. **U.S. EPA documents: free distribution for non-commercial, scientific and
+   educational purposes** (added 28 September 2026; see section 3 for the
+   commercial-use caveat).
 
 ## 1. U.S. NRC documents
 
@@ -78,10 +81,68 @@ field reads `cc-by-4.0` for all four.
 CC BY 4.0 requires attribution: the authors, titles and DOIs above are that
 attribution, and the files are unmodified (only renamed for shorter paths).
 
+## 3. U.S. EPA documents
+
+The U.S. Environmental Protection Agency's disclaimers page
+(<https://www.epa.gov/web-policies-and-procedures/epa-disclaimers>, accessed
+28 September 2026), section "Copyright Status", states, verbatim:
+
+> The U.S. Government retains a nonexclusive, royalty-free license to publish
+> or reproduce these documents, or allow others to do so, for U.S. Government
+> purposes. These documents may be freely distributed and used for
+> non-commercial, scientific and educational purposes. Commercial use of the
+> documents available from the EPA websites may be protected under the U.S.
+> and Foreign Copyright Laws. Individual documents on the EPA website may have
+> different copyright conditions, and that will be noted in those documents.
+
+Neither report below notes any copyright condition of its own: the full text
+of each was searched for a copyright notice, "public domain" or a permission
+statement, and neither carries one. Each carries only the standard
+U.S.-Government sponsorship disclaimer ("This report was prepared as an account
+of work sponsored by an agency of the United States Government. Neither the
+United States Government nor any agency thereof, nor any of their employees,
+makes any warranty ..."). They are therefore included on the basis of the EPA
+statement above, as EPA publications, **for non-commercial, scientific and
+educational use**. This is narrower than grounds 1 and 2: anyone reusing these
+two files commercially must satisfy themselves of the copyright position,
+because the EPA statement does not grant it.
+
+Both reports were prepared jointly by EPA staff and Oak Ridge National
+Laboratory (a U.S. Department of Energy contractor-operated laboratory), so
+they are not wholly works of federal employees and are not claimed here as
+public domain under 17 U.S.C. § 105. FGR-11's own front matter reads "This
+report was prepared by the Office of Radiation Programs, U.S. Environmental
+Protection Agency, Washington, DC 20460 and by the Oak Ridge National
+Laboratory, Oak Ridge, Tennessee 37831, operated by Martin Marietta Energy
+Systems, Inc. for the U.S. Department of Energy, Contract No.
+DE-AC05-84OR21400". FGR-13's reads "This report was prepared for the Office of
+Radiation and Indoor Air, U.S. Environmental Protection Agency, Washington, DC
+20460 by Oak Ridge National Laboratory, Oak Ridge, Tennessee 37831", and states
+that its preparation "was funded by the U.S. Environmental Protection Agency,
+the U.S. Department of Energy (DOE), and the U.S. Nuclear Regulatory Commission
+(NRC)". Neither title page assigns individual authors to the two affiliations;
+the one affiliation a report states for a named author is FGR-11's preface
+naming Allan C.B. Richardson as "Chief, Guides and Criteria Branch, ANR-460,
+U.S. Environmental Protection Agency".
+
+Each file is byte-identical (SHA-256 checked, 28 September 2026) to the copy at
+the EPA URL given below.
+
+| File | Document | Prepared by | Published | EPA source |
+|---|---|---|---|---|
+| `epa/fgr-11-epa-520-1-88-020.pdf` | Federal Guidance Report No. 11, EPA-520/1-88-020, *Limiting Values of Radionuclide Intake and Air Concentration and Dose Conversion Factors for Inhalation, Submersion, and Ingestion* | K.F. Eckerman, A.B. Wolbarst, A.C.B. Richardson; Oak Ridge National Laboratory and Office of Radiation Programs, U.S. EPA | September 1988 | <https://www.epa.gov/sites/default/files/2015-05/documents/520-1-88-020.pdf> |
+| `epa/fgr-13-epa-402-r-99-001.pdf` | Federal Guidance Report No. 13, EPA 402-R-99-001, *Cancer Risk Coefficients for Environmental Exposure to Radionuclides* | K.F. Eckerman, R.W. Leggett, C.B. Nelson, J.S. Puskin, A.C.B. Richardson; Oak Ridge National Laboratory and Office of Radiation and Indoor Air, U.S. EPA | September 1999 | <https://www.epa.gov/system/files/documents/2025-03/402-r-99-001_508-d_2.pdf> |
+
+Both URLs were accessed 28 September 2026 from the EPA's Federal Guidance
+page (<https://www.epa.gov/radiation/federal-guidance-radiation-protection>).
+The FGR-13 copy is EPA's 2025 re-issue of the 1999 report, with an EPA
+accessibility statement added in front of the original cover; the FGR-11 copy
+has an EPA contact disclaimer stamped on its cover. Neither alters the report.
+
 ## Provenance
 
 The files were collected by the repository owner and added on 22 September
-2026. Bibliographic details were read from each document's own title and
+2026, except the two EPA reports, added on 28 September 2026. Bibliographic details were read from each document's own title and
 front-matter pages; licence details from the sources cited in each section.
 Nothing here is a restricted or proprietary document; anything that is must
 not be added to this repository.
