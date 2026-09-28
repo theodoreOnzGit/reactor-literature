@@ -132,17 +132,25 @@ the EPA URL given below.
 |---|---|---|---|---|
 | `epa/fgr-11-epa-520-1-88-020.pdf` | Federal Guidance Report No. 11, EPA-520/1-88-020, *Limiting Values of Radionuclide Intake and Air Concentration and Dose Conversion Factors for Inhalation, Submersion, and Ingestion* | K.F. Eckerman, A.B. Wolbarst, A.C.B. Richardson; Oak Ridge National Laboratory and Office of Radiation Programs, U.S. EPA | September 1988 | <https://www.epa.gov/sites/default/files/2015-05/documents/520-1-88-020.pdf> |
 | `epa/fgr-13-epa-402-r-99-001.pdf` | Federal Guidance Report No. 13, EPA 402-R-99-001, *Cancer Risk Coefficients for Environmental Exposure to Radionuclides* | K.F. Eckerman, R.W. Leggett, C.B. Nelson, J.S. Puskin, A.C.B. Richardson; Oak Ridge National Laboratory and Office of Radiation and Indoor Air, U.S. EPA | September 1999 | <https://www.epa.gov/system/files/documents/2025-03/402-r-99-001_508-d_2.pdf> |
+| `epa/fgr-15-epa-402-r-25-001.pdf` | Federal Guidance Report No. 15, EPA 402-R-25-001, *External Exposure to Radionuclides in Air, Water and Soil*, revised July 2025 | M.B. Bellamy, C.E. Samuels, S.A. Dewji, R.W. Leggett, M. Hiller, K. Veinot, R.P. Manger, J.C. Ryman, C.E. Easterly, N.E. Hertel, D.J. Stewart, K.F. Eckerman; Oak Ridge National Laboratory, for the Office of Radiation and Indoor Air, U.S. EPA | July 2025 | <https://www.epa.gov/system/files/documents/2025-07/fgr15_rev2025july_final_508.pdf> |
 
-Both URLs were accessed 28 September 2026 from the EPA's Federal Guidance
+All three URLs were accessed 28 September 2026 from the EPA's Federal Guidance
 page (<https://www.epa.gov/radiation/federal-guidance-radiation-protection>).
 The FGR-13 copy is EPA's 2025 re-issue of the 1999 report, with an EPA
 accessibility statement added in front of the original cover; the FGR-11 copy
 has an EPA contact disclaimer stamped on its cover. Neither alters the report.
 
+FGR-15 is the **July 2025 revision** (EPA 402-R-25-001, SHA-256
+`a91cda89…21ae`). EPA's FGR-15 page states that the earlier versions
+(EPA 402-R-18-001 and 402-R-19-002) "contained errors in the dose
+coefficient tables" and "should be discarded", so the 2019 copy is
+deliberately not held here. Its front matter carries no copyright notice;
+the basis is the same EPA statement as for FGR-11 and FGR-13.
+
 ## Provenance
 
 The files were collected by the repository owner and added on 22 September
-2026, except the two EPA reports, added on 28 September 2026. Bibliographic details were read from each document's own title and
+2026, except the three EPA reports, added on 28 September 2026. Bibliographic details were read from each document's own title and
 front-matter pages; licence details from the sources cited in each section.
 Nothing here is a restricted or proprietary document; anything that is must
 not be added to this repository.
