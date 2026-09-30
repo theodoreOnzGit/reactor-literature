@@ -59,6 +59,7 @@ report that is credited to a third party keeps that party's copyright.
 | `nrc/nureg-cr-2671-marviken.pdf` | NUREG/CR-2671 (MXC-301), *The Marviken Full Scale Critical Flow Tests: Summary Report*, Joint Reactor Safety Experiments in the Marviken Power Station, Sweden | Marviken project, for the U.S. NRC | 1982 |
 | `nrc/nureg-cr-0417-saha-critical-flow-review-1978.pdf` | P. Saha, *A Review of Two-Phase Steam-Water Critical Flow Models with Emphasis on Thermal Nonequilibrium*, NUREG/CR-0417 (BNL-NUREG-50907), Brookhaven National Laboratory, for the U.S. NRC | September 1978 |
 | `nrc/nrc-hrtd-ge-bwr4-atm-ch7.1-fukushima.pdf` | *GE BWR/4 Advanced Technology Manual*, Chapter 7.1, "Fukushima Dai-ichi Earthquake and Tsunami Event" (Rev 0114), U.S. NRC Human Resources Training and Development (HRTD) course material | U.S. NRC (HRTD) | 2014 (Rev 0114) |
+| `soffer2009nureg1465.pdf` | NUREG-1465, *Accident Source Terms for Light-Water Nuclear Power Plants*, Final Report, L. Soffer, S.B. Burson, C.M. Ferrell, R.Y. Lee, J.N. Ridgely | U.S. NRC, Office of Nuclear Regulatory Research (NRC staff) | February 1995 |
 | `hjg2023date.pdf` | STC-23-079, *Final Rule: Emergency Preparedness for Small Modular Reactors and Other New Technologies*, NRC letter to Agreement/Non-Agreement States, State Liaison Officers and Tribal Nations, enclosing the Federal Register notice (88 FR 80050, 16 November 2023) | U.S. NRC (NRC staff; federal rulemaking) | 16 November 2023 |
 
 **Where to check:** the NRC Site Disclaimer page quoted above
