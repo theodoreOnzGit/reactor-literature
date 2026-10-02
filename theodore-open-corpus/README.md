@@ -13,6 +13,7 @@ by the document itself or by its publisher:
 3. **U.S. NRC documents: open access, U.S. Government Work.**
 4. **Other U.S. Government reports marked for unlimited distribution.**
 5. **European Commission (JRC) reports, whose reuse the Commission authorises.**
+6. **Documents released by their publisher under a permissive open-source licence** (BSD- or MIT-style) that permits redistribution.
 
 ## 1. Documents by the repository owner
 
@@ -96,6 +97,12 @@ each marked for unlimited distribution.
 | File | Document | Basis |
 |---|---|---|
 | `jrc/kjna28712enn.pdf` | K. Kugeler, H. Nabielek, D. Buckthorpe, *The High Temperature Gas-cooled Reactor: Safety considerations of the (V)HTR-Modul*, EUR 28712 EN, Publications Office of the European Union, 2017, <https://doi.org/10.2760/270321> | The report states: "Reuse is authorised provided the source is acknowledged. The reuse policy of European Commission documents is regulated by Decision 2011/833/EU (OJ L 330, 14.12.2011, p. 39)." Acknowledged here. **Where:** PDF page 2, the legal notice. |
+
+## 6. Permissive open-source licence
+
+| File | Document | Licence |
+|---|---|---|
+| `2022laur1720093.pdf` | R.E. MacFarlane (original author), with D.W. Muir, R.M. Boicourt, A.C. Kahler, J.L. Conlin, W. Haeck et al., *The NJOY Nuclear Data Processing System, Version 2016*, LA-UR-17-20093, Los Alamos National Laboratory (revision dated November 7, 2019). The manual's source is published at <https://github.com/njoy/NJOY2016-manual> | The manual repository's `LICENSE` (checked at commit `9a2951f`, 2026-10-02) is Los Alamos National Security, LLC's **BSD-3-Clause-style** licence: "redistribution and use in source and binary forms, with or without modification, are permitted provided that" the copyright notice and disclaimer are retained, with a no-endorsement clause. **Where:** the same notice is printed in the PDF on page 2 ("Copyright Notice: Copyright 2016. Los Alamos National Security, LLC …"), so this unmodified copy carries it. Row added 2026-10-02; the file had been committed without one. |
 
 ## Provenance
 
