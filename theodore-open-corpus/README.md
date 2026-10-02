@@ -112,7 +112,7 @@ They are not adapted or excerpted into derivative works here.
 
 | File | Paper | Licence statement |
 |---|---|---|
-| `kabach2021intercomparison.pdf` | O. Kabach et al., "An inter-comparison between ENDF/B-VIII.0-NECP-Atlas and ENDF/B-VIII.0-NJOY results for criticality safety benchmarks and benchmarks on the reactivity temperature coefficient", *Nuclear Engineering and Technology* 53 (2021) 2445–2453, <https://doi.org/10.1016/j.net.2021.02.012> | "© 2021 Korean Nuclear Society, Published by Elsevier Korea LLC. This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/)." **Where:** PDF page 1, under the abstract and in the footer. Row added 2026-10-02. |
+| `kabach2021intercomparison.pdf` | O. Kabach, A. Chetaine, A. Benchrif, H. Amsil, "An inter-comparison between ENDF/B-VIII.0-NECP-Atlas and ENDF/B-VIII.0-NJOY results for criticality safety benchmarks and benchmarks on the reactivity temperature coefficient", *Nuclear Engineering and Technology* 53 (2021) 2445–2453, <https://doi.org/10.1016/j.net.2021.02.012> | "© 2021 Korean Nuclear Society, Published by Elsevier Korea LLC. This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/)." **Where:** PDF page 1, under the abstract and in the footer. Row added 2026-10-02. |
 
 ## Provenance
 
