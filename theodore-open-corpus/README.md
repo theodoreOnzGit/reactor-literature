@@ -14,6 +14,7 @@ by the document itself or by its publisher:
 4. **Other U.S. Government reports marked for unlimited distribution.**
 5. **European Commission (JRC) reports, whose reuse the Commission authorises.**
 6. **Documents released by their publisher under a permissive open-source licence** (BSD- or MIT-style) that permits redistribution.
+7. **Open access under a Creative Commons Attribution-NonCommercial-NoDerivatives licence (CC BY-NC-ND)**: redistributed unmodified, non-commercially, with attribution.
 
 ## 1. Documents by the repository owner
 
@@ -103,6 +104,15 @@ each marked for unlimited distribution.
 | File | Document | Licence |
 |---|---|---|
 | `2022laur1720093.pdf` | R.E. MacFarlane (original author), with D.W. Muir, R.M. Boicourt, A.C. Kahler, J.L. Conlin, W. Haeck et al., *The NJOY Nuclear Data Processing System, Version 2016*, LA-UR-17-20093, Los Alamos National Laboratory (revision dated November 7, 2019). The manual's source is published at <https://github.com/njoy/NJOY2016-manual> | The manual repository's `LICENSE` (checked at commit `9a2951f`, 2026-10-02) is Los Alamos National Security, LLC's **BSD-3-Clause-style** licence: "redistribution and use in source and binary forms, with or without modification, are permitted provided that" the copyright notice and disclaimer are retained, with a no-endorsement clause. **Where:** the same notice is printed in the PDF on page 2 ("Copyright Notice: Copyright 2016. Los Alamos National Security, LLC …"), so this unmodified copy carries it. Row added 2026-10-02; the file had been committed without one. |
+
+## 7. Open access, CC BY-NC-ND
+
+These may be shared unmodified, for non-commercial purposes, with attribution.
+They are not adapted or excerpted into derivative works here.
+
+| File | Paper | Licence statement |
+|---|---|---|
+| `kabach2021intercomparison.pdf` | O. Kabach et al., "An inter-comparison between ENDF/B-VIII.0-NECP-Atlas and ENDF/B-VIII.0-NJOY results for criticality safety benchmarks and benchmarks on the reactivity temperature coefficient", *Nuclear Engineering and Technology* 53 (2021) 2445–2453, <https://doi.org/10.1016/j.net.2021.02.012> | "© 2021 Korean Nuclear Society, Published by Elsevier Korea LLC. This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/)." **Where:** PDF page 1, under the abstract and in the footer. Row added 2026-10-02. |
 
 ## Provenance
 
