@@ -53,6 +53,21 @@ own.
 | `nrc/ML16245A032.pdf` | NUREG-2201, *Probabilistic Risk Assessment and Regulatory Decisionmaking: Some Frequently Asked Questions* | N. Siu, M. Stutzke, S. Dennis, D. Harrison, U.S. NRC Office of Nuclear Regulatory Research | September 2016 |
 | `nrc/ML12338A215.pdf` | NUREG/CR-7041 (ORNL/TM-2011/21), *SCALE/TRITON Primer: A Primer for Light Water Reactor Lattice Physics Calculations* | B.J. Ade, Oak Ridge National Laboratory, for the U.S. NRC | November 2012 |
 | `nrc/ML22063A060.pdf` | NUREG/CR-7289 (ORNL/TM-2021/2002), *Nuclear Data Assessment for Advanced Reactors* | F. Bostelmann, G. Ilas, C. Celik, A.M. Holcomb, W.A. Wieselquist, Oak Ridge National Laboratory, for the U.S. NRC | March 2022 |
+| `nrc/ML070810350.pdf` | NUREG-0800, *Standard Review Plan for the Review of Safety Analysis Reports for Nuclear Power Plants*, Table of Contents, Revision 6 | U.S. NRC staff | March 2007 |
+| `nrc/ML17325A611.pdf` | Regulatory Guide 1.232, Revision 0, *Guidance for Developing Principal Design Criteria for Non-Light-Water Reactors* (ARDC, SFR-DC, MHTGR-DC) | U.S. NRC (technical lead J. Mazza) | April 2018 |
+| `nrc/nureg-1537-part1-1996.pdf` | NUREG-1537, Part 1, *Guidelines for Preparing and Reviewing Applications for the Licensing of Non-Power Reactors: Format and Content* | U.S. NRC Office of Nuclear Reactor Regulation | February 1996 |
+| `nrc/nureg-1520-rev2-2015.pdf` | NUREG-1520, Revision 2, *Standard Review Plan for Fuel Cycle Facilities License Applications*, Final Report | U.S. NRC Office of Nuclear Material Safety and Safeguards | 2015 |
+| `nrc/nureg-1555-1999.pdf` | NUREG-1555, *Standard Review Plans for Environmental Reviews for Nuclear Power Plants* (Environmental Standard Review Plan) | U.S. NRC Office of Nuclear Reactor Regulation | October 1999 |
+| `nrc/nureg-0654-fema-rep-1-rev2-2019.pdf` | NUREG-0654/FEMA-REP-1, Revision 2, *Criteria for Preparation and Evaluation of Radiological Emergency Response Plans and Preparedness in Support of Nuclear Power Plants*, Final Report | U.S. NRC and the Federal Emergency Management Agency (both U.S. Government) | December 2019 |
+
+**Added 6 October 2026** (the six rows from `ML070810350` down), supplied by
+the owner as the sources of Kovan's new concept-tree skeleton (OUTRAM PARK
+GitHub issues #724, #726). Files named `ML…` carry their ADAMS accession number
+(read from the document or its NRC link); the four named `nureg-…` were
+supplied as files, and their accession numbers were not recorded, so they are
+named by report number instead. Their `corpus.rs` entries follow when Kovan's
+new concept schema lands (#727). NUREG-0654/FEMA-REP-1 is a joint NRC–FEMA
+publication; both are U.S. Government agencies, so 17 U.S.C. § 105 covers it.
 
 The two NUREG/CR reports were prepared by a contractor (Oak Ridge National
 Laboratory) under NRC sponsorship and published by the NRC in its NUREG series.
