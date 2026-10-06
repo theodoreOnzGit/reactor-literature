@@ -8,7 +8,7 @@ never shipped in the Kovan crate. Only documents in this folder are
 hardcoded into Kovan. The owner's other open literature is in
 [`../theodore-open-corpus/`](../theodore-open-corpus/).
 
-Every document here is redistributable, on one of five grounds:
+Every document here is redistributable, on one of six grounds:
 
 1. **U.S. NRC documents: open access, U.S. Government Work.**
 2. **Open access under the Creative Commons Attribution licence (CC BY 4.0).**
@@ -19,6 +19,8 @@ Every document here is redistributable, on one of five grounds:
    (added 6 October 2026, owner's direction; see section 4).
 5. **European Commission documents whose reuse is authorised with
    acknowledgement** (added 6 October 2026; see section 5).
+6. **U.S. federal regulations: the Code of Federal Regulations** (added
+   6 October 2026; see section 6).
 
 ## 1. U.S. NRC documents
 
@@ -193,6 +195,21 @@ power cycles).
 | File | Document | Basis |
 |---|---|---|
 | `eu-jrc/kjna28712enn.pdf` | K. Kugeler, H. Nabielek, D. Buckthorpe, *The High Temperature Gas-cooled Reactor: Safety considerations of the (V)HTR-Modul*, EUR 28712 EN, Publications Office of the European Union, 2017, <https://doi.org/10.2760/270321> | The report states: "Reuse is authorised provided the source is acknowledged. The reuse policy of European Commission documents is regulated by Decision 2011/833/EU (OJ L 330, 14.12.2011, p. 39)." Acknowledged here. **Where:** PDF page 2, the legal notice. |
+
+## 6. U.S. federal regulations (Code of Federal Regulations)
+
+Added 6 October 2026. Federal regulations are U.S. Government works with no
+copyright (17 U.S.C. § 105). These copies are printouts of the **eCFR**
+(<https://www.ecfr.gov>), which states on every page: "This content is from the
+eCFR and is authoritative but unofficial." The official text is the annual
+CFR edition and the Federal Register. Each file is the regulation as it stood
+on the date in its name.
+
+| File | Regulation | Source note (as printed) | As of |
+|---|---|---|---|
+| `cfr/10cfr50-ecfr-2026-10-02.pdf` | 10 CFR Part 50, *Domestic Licensing of Production and Utilization Facilities* (incl. Appendix A, General Design Criteria; Appendix B, Quality Assurance Criteria), 326 pp. | "Source: 21 FR 355, Jan. 19, 1956, unless otherwise noted." | 2 October 2026 |
+| `cfr/10cfr52-ecfr-2026-10-02.pdf` | 10 CFR Part 52, *Licenses, Certifications, and Approvals for Nuclear Power Plants*, 153 pp. | "Source: 72 FR 49517, Aug. 28, 2007, unless otherwise noted." | 2 October 2026 |
+| `cfr/10cfr53-ecfr-2026-10-02.pdf` | 10 CFR Part 53, *Risk-Informed, Technology-Inclusive Regulatory Framework for Commercial Nuclear Plants*, 166 pp. | "Source: 91 FR 15794, Mar. 30, 2026, unless otherwise noted." | 2 October 2026 |
 
 ## Provenance
 
