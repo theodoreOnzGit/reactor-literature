@@ -8,7 +8,7 @@ never shipped in the Kovan crate. Only documents in this folder are
 hardcoded into Kovan. The owner's other open literature is in
 [`../theodore-open-corpus/`](../theodore-open-corpus/).
 
-Every document here is redistributable, on one of four grounds:
+Every document here is redistributable, on one of five grounds:
 
 1. **U.S. NRC documents: open access, U.S. Government Work.**
 2. **Open access under the Creative Commons Attribution licence (CC BY 4.0).**
@@ -17,6 +17,8 @@ Every document here is redistributable, on one of four grounds:
    commercial-use caveat).
 4. **U.S. Department of Energy reports marked for unlimited distribution**
    (added 6 October 2026, owner's direction; see section 4).
+5. **European Commission documents whose reuse is authorised with
+   acknowledgement** (added 6 October 2026; see section 5).
 
 ## 1. U.S. NRC documents
 
@@ -177,6 +179,20 @@ The same ground is used in the owner's open corpus
 | File | Document | Basis |
 |---|---|---|
 | `us-doe/ornl-tm-2018-976-msr-nureg0800-gap-analysis.pdf` | R.J. Belles, G.F. Flanagan, *Regulatory Gap Analysis of Select NUREG-0800 Chapters for Applicability to Molten Salt Reactors*, ORNL/TM-2018/976, Oak Ridge National Laboratory (managed by UT-Battelle, LLC) for the U.S. Department of Energy, October 2018. Source of the MSR extension of Kovan's concept tree (OUTRAM PARK #726) | The cover states "Approved for public release. Distribution is unlimited." (checked 6 October 2026) **Where:** PDF page 1 (the cover). |
+
+## 5. European Commission documents, reuse authorised
+
+Added 6 October 2026: a European Commission (Joint Research Centre) report
+belongs here when its own legal notice authorises reuse. The basis is that
+notice, quoted with where it is, under Decision 2011/833/EU on the reuse of
+Commission documents. The source is acknowledged as each notice requires.
+Moved here from `../theodore-open-corpus/jrc/` on 6 October 2026 at the owner's
+direction, so Kovan's concept tree can cite it (OUTRAM PARK #724: alternate
+power cycles).
+
+| File | Document | Basis |
+|---|---|---|
+| `eu-jrc/kjna28712enn.pdf` | K. Kugeler, H. Nabielek, D. Buckthorpe, *The High Temperature Gas-cooled Reactor: Safety considerations of the (V)HTR-Modul*, EUR 28712 EN, Publications Office of the European Union, 2017, <https://doi.org/10.2760/270321> | The report states: "Reuse is authorised provided the source is acknowledged. The reuse policy of European Commission documents is regulated by Decision 2011/833/EU (OJ L 330, 14.12.2011, p. 39)." Acknowledged here. **Where:** PDF page 2, the legal notice. |
 
 ## Provenance
 
