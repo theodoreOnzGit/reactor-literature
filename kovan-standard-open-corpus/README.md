@@ -8,13 +8,15 @@ never shipped in the Kovan crate. Only documents in this folder are
 hardcoded into Kovan. The owner's other open literature is in
 [`../theodore-open-corpus/`](../theodore-open-corpus/).
 
-Every document here is redistributable, on one of three grounds:
+Every document here is redistributable, on one of four grounds:
 
 1. **U.S. NRC documents: open access, U.S. Government Work.**
 2. **Open access under the Creative Commons Attribution licence (CC BY 4.0).**
 3. **U.S. EPA documents: free distribution for non-commercial, scientific and
    educational purposes** (added 28 September 2026; see section 3 for the
    commercial-use caveat).
+4. **U.S. Department of Energy reports marked for unlimited distribution**
+   (added 6 October 2026, owner's direction; see section 4).
 
 ## 1. U.S. NRC documents
 
@@ -161,6 +163,20 @@ FGR-15 is the **July 2025 revision** (EPA 402-R-25-001, SHA-256
 coefficient tables" and "should be discarded", so the 2019 copy is
 deliberately not held here. Its front matter carries no copyright notice;
 the basis is the same EPA statement as for FGR-11 and FGR-13.
+
+## 4. U.S. Department of Energy reports, distribution unlimited
+
+Added 6 October 2026 at the owner's direction: a DOE report (including one
+written by a DOE national laboratory's contractor) belongs here when the report
+itself is marked for unlimited distribution. A contractor-written report is not
+a work of the U.S. Government itself, so the basis is the report's own marking,
+not 17 U.S.C. § 105; the marking is quoted, with where it is, for each file.
+The same ground is used in the owner's open corpus
+(`../theodore-open-corpus/README.md`, section 4).
+
+| File | Document | Basis |
+|---|---|---|
+| `us-doe/ornl-tm-2018-976-msr-nureg0800-gap-analysis.pdf` | R.J. Belles, G.F. Flanagan, *Regulatory Gap Analysis of Select NUREG-0800 Chapters for Applicability to Molten Salt Reactors*, ORNL/TM-2018/976, Oak Ridge National Laboratory (managed by UT-Battelle, LLC) for the U.S. Department of Energy, October 2018. Source of the MSR extension of Kovan's concept tree (OUTRAM PARK #726) | The cover states "Approved for public release. Distribution is unlimited." (checked 6 October 2026) **Where:** PDF page 1 (the cover). |
 
 ## Provenance
 
