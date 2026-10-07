@@ -8,12 +8,13 @@ never shipped in the Kovan crate. Only documents in this folder are
 hardcoded into Kovan. The owner's other open literature is in
 [`../theodore-open-corpus/`](../theodore-open-corpus/).
 
-Every document here is redistributable, on one of ~~six~~ ~~seven~~ nine grounds:
+Every document here is redistributable, on one of ~~six~~ ~~seven~~ ~~nine~~ fourteen grounds:
 
 1. **U.S. NRC documents: open access, U.S. Government Work.**
 2. **Open access under the Creative Commons Attribution licence (CC BY 4.0).**
    (Extended 7 October 2026 beyond the PHYSOR 2026 papers to any article
-   whose own page prints CC BY; see section 2.)
+   whose own page prints CC BY; see section 2. Extended again the same day
+   to arXiv preprints whose arXiv record gives CC BY 4.0, OUTRAM PARK #760.)
 3. **U.S. EPA documents: free distribution for non-commercial, scientific and
    educational purposes** (added 28 September 2026; see section 3 for the
    commercial-use caveat).
@@ -37,6 +38,20 @@ Every document here is redistributable, on one of ~~six~~ ~~seven~~ nine grounds
    its official landing page: CC BY-SA, CC BY-NC, CC BY-NC-ND** (added
    7 October 2026, owner's direction on #760: "CC BY-NC-ND qualifies"; see
    section 10).
+10. **U.S. National Security Agency publications that state they "may be
+    shared broadly"** (added 7 October 2026, owner's direction on #760; see
+    section 11).
+11. **CISA documents marked TLP:CLEAR** (added 7 October 2026, owner's
+    direction on #760; see section 12).
+12. **NASA documents: works of the U.S. Government (17 U.S.C. § 105), with
+    the document's own release marking or its NASA Technical Reports Server
+    record ("Public Use Permitted") quoted where there is one** (added
+    7 October 2026, owner's direction on #760; see section 13).
+13. **FAA advisory circulars and orders: works of the U.S. Government
+    (17 U.S.C. § 105)** (added 7 October 2026, owner's direction on #760; see
+    section 14).
+14. **NIST reports that state they are in the public domain** (added
+    7 October 2026, owner's direction on #760; see section 15).
 
 ## 1. U.S. NRC documents
 
@@ -91,6 +106,14 @@ own.
 | `nrc/ML22258A204.pdf` | Regulatory Guide 5.71, Revision 1, *Cybersecurity Programs for Nuclear Power Reactors*. IAEA issue 15, nuclear security | U.S. NRC (technical lead K. Lawson-Jenkins) | February 2023 |
 | `nrc/ML22194A859.pdf` | NUREG-1757, Volume 2, Revision 2, *Consolidated Decommissioning Guidance: Characterization, Survey, and Determination of Radiological Criteria*, Final Report (579 pp.). IAEA issue 17, radioactive waste and decommissioning | C.S. Barr, S. Clark, G.C. Chapman, D.W. Esh, R.W. Fedors, A.M. Huffert, L.A. Kauffman, M.M. LaFranzo, C.A. McKenney, L.L. Parks, D.W. Schmidt, A.L. Schwartzman, B.A. Watson, Office of Nuclear Material Safety and Safeguards, U.S. NRC | July 2022 |
 | `nrc/ML24038A310.pdf` | Regulatory Guide 1.164, Revision 1, *Dedication of Commercial-Grade Items for Use in Nuclear Power Plants*. IAEA issue 19, procurement | U.S. NRC (technical lead D. Zhang) | April 2024 |
+| `nrc/ML16019A308.pdf` | NUREG-0800, Standard Review Plan, Branch Technical Position 7-14, Revision 6, *Guidance on Software Reviews for Digital Computer-Based Instrumentation and Control Systems* (75 pp.). Software-properties source (OUTRAM PARK #760) | U.S. NRC staff | August 2016 |
+| `nrc/ML13073A210.pdf` | Regulatory Guide 1.168, Revision 2, *Verification, Validation, Reviews, and Audits for Digital Computer Software Used in Safety Systems of Nuclear Power Plants* | U.S. NRC, Office of Nuclear Regulatory Research (technical lead K. Sturzebecher) | July 2013 |
+| `nrc/ML12355A642.pdf` | Regulatory Guide 1.169, Revision 1, *Configuration Management Plans for Digital Computer Software Used in Safety Systems of Nuclear Power Plants* | as RG 1.168 | July 2013 |
+| `nrc/ML13003A216.pdf` | Regulatory Guide 1.170, Revision 1, *Test Documentation for Digital Computer Software Used in Safety Systems of Nuclear Power Plants* | as RG 1.168 | July 2013 |
+| `nrc/ML13004A375.pdf` | Regulatory Guide 1.171, Revision 1, *Software Unit Testing for Digital Computer Software Used in Safety Systems of Nuclear Power Plants* | as RG 1.168 | July 2013 |
+| `nrc/ML13007A173.pdf` | Regulatory Guide 1.172, Revision 1, *Software Requirement Specifications for Digital Computer Software and Complex Electronics Used in Safety Systems of Nuclear Power Plants* | as RG 1.168 | July 2013 |
+| `nrc/ML13009A190.pdf` | Regulatory Guide 1.173, Revision 1, *Developing Software Life-Cycle Processes for Digital Computer Software Used in Safety Systems of Nuclear Power Plants* | as RG 1.168 | July 2013 |
+| `nrc/ML23054A463.pdf` | Regulatory Guide 1.152, Revision 4, *Criteria for Programmable Digital Devices in Safety-Related Systems of Nuclear Power Plants* | U.S. NRC (technical lead K. Nguyen) | July 2023 |
 
 **Added 7 October 2026** (the eleven rows from `ML18137A389` down): bedrock
 documents for the IAEA Milestones issues, found by a search across the 19
@@ -115,6 +138,32 @@ copyrights). SHA-256 of each file as filed:
 | `nrc/ML22258A204.pdf` | `4b831929165a3b23273da30aa3915d775ea287e6dc4e679672c48c5191f173cc` |
 | `nrc/ML22194A859.pdf` | `2b04c9610ba91c878dae961b618745d6ffd55eba1661bcb53c027ee973670ac1` |
 | `nrc/ML24038A310.pdf` | `40b09dd7cb948313300090a75ee61909cbc2d8464462243dc48db64a180170d8` |
+
+**Added 7 October 2026, software properties** (the eight rows from
+`ML16019A308` down): BTP 7-14 and the NRC's digital-software regulatory
+guides, sources for the software-properties branch of Kovan's concept tree
+(OUTRAM PARK #760). Each title page names the NRC (Office of Nuclear
+Regulatory Research for the guides) and an NRC technical lead; none is a
+NUREG/CR contractor report. The full text of each was searched for a
+copyright notice and none carries one; the guides endorse IEEE standards,
+which stay copyrighted and are not reproduced here. Each file is
+byte-identical (SHA-256) to the Internet Archive's copy of the NRC URL
+`https://www.nrc.gov/docs/<ML first six>/<accession>.pdf`, fetched on
+7 October 2026 (www.nrc.gov refuses scripted requests). Whether a later
+revision of any guide exists was **not re-checked** on that day (the NRC's
+guide index refused the request); the revisions held are those the files
+print.
+
+| File | SHA-256 |
+|---|---|
+| `nrc/ML16019A308.pdf` | `369d0c43d4e05744a6db2c652628b5962277c94fa02fc0b0f4fbb3af797e11a1` |
+| `nrc/ML13073A210.pdf` | `6d58b8118d06b3dd79fcc9e8c9ec10eb07d0216ef964db58411f99100499c1dd` |
+| `nrc/ML12355A642.pdf` | `5d8fe3ac1fb880fce8de0fc9586eecc8f8e543bc07e662d662dc73a14571748e` |
+| `nrc/ML13003A216.pdf` | `debde7300480f041be079c80d6f262507349a1af9fa5521cab4a4e8fe42b573c` |
+| `nrc/ML13004A375.pdf` | `63ab0ca30a511e295123c495135a989506695374855ad3afacb9e90c2fed802a` |
+| `nrc/ML13007A173.pdf` | `b877fea20b5b7cf225bf2c1df8b8655c0e772fbbe79eedf722912ba18ec9b1bc` |
+| `nrc/ML13009A190.pdf` | `0b0d952aca8ded867ef6a6df95b0b32a140bde1897c7c3333130a6404b84d605` |
+| `nrc/ML23054A463.pdf` | `4623013de6992928e49ebca09e8acb8f6c139434f9dea47c319088eb145449b2` |
 
 **Added 6 October 2026** (the six rows from `ML070810350` down), supplied by
 the owner as the sources of Kovan's new concept-tree skeleton (OUTRAM PARK
@@ -172,6 +221,22 @@ citation below; the files are unmodified.
 |---|---|---|---|
 | `cc-by/kim2022-fenrg-859622-idtmc-depletion.pdf` | I. Kim, I. Kim, Y. Kim, "An iDTMC-based Monte Carlo depletion of a 3D SMR with intra-pin flux renormalization", *Front. Energy Res.* 10:859622, published 10 August 2022, <https://doi.org/10.3389/fenrg.2022.859622> | "© 2022 Kim, Kim and Kim." | `85060b93a1cfaf1ac050f73a2e38d52acb8d398bf4923811cdb7e791aba5c991` |
 | `cc-by/zhang2023-fenrg-1101050-parallel-jfnk-sn.pdf` | Y. Zhang, X. Zhou, "Parallel Jacobian-free Newton Krylov discrete ordinates method for pin-by-pin neutron transport models", *Front. Energy Res.* 10:1101050, published 18 January 2023, <https://doi.org/10.3389/fenrg.2022.1101050> | "© 2023 Zhang and Zhou." | `c19d82e876878c3cca92d9b47b2749006571ef1f69679ac197554fd2c134847c` |
+
+### arXiv preprints under CC BY 4.0 (`cc-by/`, added 7 October 2026)
+
+Ground 2 extended to arXiv preprints (owner, OUTRAM PARK #760: "arXiv CC BY
+extends the existing CC BY ground"). The licence is the one the authors chose
+on arXiv: each record page (<https://arxiv.org/abs/...>, re-read 7 October
+2026) links "view license" to <http://creativecommons.org/licenses/by/4.0/>.
+The PDFs do not restate it. Each file is byte-identical to
+`https://arxiv.org/pdf/<id>v1`, fetched that day; v1 is the only version of
+each. The attribution CC BY asks for is the citation below; the files are
+unmodified. Sources for the software-properties branch.
+
+| File | Article | Note | SHA-256 |
+|---|---|---|---|
+| `cc-by/arxiv-2505.01671v1-keahey-practical-reproducibility.pdf` | K. Keahey, M. Richardson, R. Tolosana Calasanz, S. Hunold, J. Lofstead, T. Malik, C. Perez, "Report on Challenges of Practical Reproducibility for Systems and HPC Computer Science", arXiv:2505.01671v1 [cs.DC], submitted 3 May 2025 (the report's title page is dated June 7, 2025, and cites doi:10.5281/zenodo.15306610), 28 pp., <https://arxiv.org/abs/2505.01671v1> | | `f72d070b4b3e70bc92bafe0562469e2026d38358412296658a2f421abee30fb0` |
+| `cc-by/arxiv-2311.06995v1-heroux-ecp-software-ecosystem.pdf` | M.A. Heroux (Sandia National Laboratories), "Scalable Delivery of Scalable Libraries and Tools: How ECP Delivered a Software Ecosystem for Exascale and Beyond", arXiv:2311.06995v1 [cs.SE], submitted 13 November 2023, 9 pp., <https://arxiv.org/abs/2311.06995v1> | PDF page 1 carries an unfilled IEEE template footer ("XXXX-XXX © 2024 IEEE", DOI "10.1109/XXX.0000.0000000"). The arXiv record's CC BY 4.0, granted by the author at submission, is the licence of this arXiv copy; any later journal version is not held here | `8f8350b000f214ad1b500351a5f18744b7c4e28ba104f82d15a9339d05f79857` |
 
 ## 3. U.S. EPA documents
 
@@ -328,7 +393,12 @@ The files were collected by the repository owner and added on 22 September
 documents marked "Added 6 October 2026" or "Added 7 October 2026" in their
 sections (those of 7 October were found by search agents for OUTRAM PARK #760
 and each re-verified from the file, or its official landing page, before
-filing). Bibliographic details were read from each document's own title and
+filing). The 26 software-properties sources of 7 October 2026 (sections 1,
+2 and 11 to 15) were re-read that day from the files: each basis below is
+quoted from the file or its official page, every SHA-256 was computed from
+the file as filed, and every file was re-fetched from the URL given (or the
+Internet Archive's copy of it, where the agency's site refuses scripted
+requests) and found byte-identical. Bibliographic details were read from each document's own title and
 front-matter pages; licence details from the sources cited in each section.
 Nothing here is a restricted or proprietary document; anything that is must
 not be added to this repository.
@@ -517,3 +587,121 @@ solver-pattern concepts.
 | `cc-by-sa/arxiv-2306.01924v2-multiregionfoam.pdf` | H. Alkafri, C. Habes, M.E. Fadeli, S. Hess, S.B. Beale, S. Zhang, H. Jasak, H. Marschall, "multiRegionFoam -- A Unified Multiphysics Framework for Multi-Region Coupled Continuum-Physical Problems", arXiv:2306.01924v2 [physics.comp-ph], 9 July 2023 (v1 2 June 2023), 36 pp., <https://arxiv.org/abs/2306.01924v2> | **CC BY-SA 4.0**: the arXiv record (re-read 7 October 2026) links its licence to <http://creativecommons.org/licenses/by-sa/4.0/>. The PDF does not restate it. Byte-identical to <https://arxiv.org/pdf/2306.01924v2> (re-fetched that day) | `15d348cb1358c1cecf1a1f373a132f875b3ff9f790a941b219262c7045bf69e0` |
 | `cc-by-nc-nd/arxiv-2301.00289v3-wang-picard-stability.pdf` | D. Wang (Nuclear Engineering Program, The Ohio State University), "Stability Analysis of Picard Iteration for Coupled Neutronics/Thermal-Hydraulics Simulations", arXiv:2301.00289v3, 4 March 2023 (v1 31 December 2022), 4 pp., <https://arxiv.org/abs/2301.00289v3> | **CC BY-NC-ND 4.0**: the arXiv record of v3 (re-read 7 October 2026) links its licence to <http://creativecommons.org/licenses/by-nc-nd/4.0/>. The PDF does not restate it. Byte-identical to <https://arxiv.org/pdf/2301.00289v3> (fetched that day) | `0ad6c6a34a7f044b8b77d6d375eaeda7f197d8e31c8442d04cc318cc6653dd3a` |
 | `cc-by-nc-nd/cosgrove2020-pc-stability-cam-309913.pdf` | P. Cosgrove, E. Shwageraus, G.T. Parks (Department of Engineering, University of Cambridge), "Stability analysis of predictor-corrector schemes for coupling neutronics and depletion", accepted manuscript of the article in *Annals of Nuclear Energy* (Elsevier, ISSN 0306-4549, publisher DOI <https://doi.org/10.1016/j.anucene.2020.107781>), deposited in the University of Cambridge repository, <https://www.repository.cam.ac.uk/handle/1810/309913>, DOI <https://doi.org/10.17863/CAM.57013>, publication date 15 December 2020 as recorded there, 20 pp. | **CC BY-NC-ND 4.0**: the repository page (re-read 7 October 2026) states, under "Rights and licensing": "Except where otherwised noted, this item's license is described as Attribution-NonCommercial-NoDerivatives 4.0 International" (linked to <https://creativecommons.org/licenses/by-nc-nd/4.0/>). Byte-identical to the repository's download of the file (re-fetched that day) | `181efc228fdd96bbb454ab507dde88ace9811d5ead69efe8fe2f9a405e5ef51b` |
+
+## 11. U.S. National Security Agency publications that may be shared broadly
+
+Added 7 October 2026 (ground 10; owner's direction on OUTRAM PARK #760).
+The NSA is an agency of the U.S. Government; a Cybersecurity Information
+Sheet written by it is a work of the U.S. Government (17 U.S.C. § 105), and
+each sheet below also states, in its "Purpose" paragraph on the last page:
+
+> This information may be shared broadly to reach all appropriate
+> stakeholders.
+
+The second sheet is joint with CISA (also a U.S. Government agency); its
+"Purpose" paragraph speaks of "the authoring agency's cybersecurity
+missions" and ends with the same sentence. Neither carries a copyright
+notice (full text searched, 7 October 2026). Both carry a disclaimer of
+endorsement and list trademarks, which are not affected. Sources for the
+software-properties branch (memory safety). Each file is byte-identical to
+the Internet Archive's copy of the `media.defense.gov` URL given (fetched
+7 October 2026; `media.defense.gov` refuses scripted requests).
+
+| File | Document | Where the statement is | SHA-256 |
+|---|---|---|---|
+| `nsa/nsa-csi-software-memory-safety-v1.1-2023.pdf` | National Security Agency, *Software Memory Safety*, Cybersecurity Information Sheet U/OO/219936-22, PP-23-0782, Version 1.1, April 2023 (first issued November 2022), 7 pp. <https://media.defense.gov/2022/Nov/10/2003112742/-1/-1/0/CSI_SOFTWARE_MEMORY_SAFETY.PDF> | PDF page 7, "Purpose" | `2b555eadd4001f3214a000487bdd552feba3a3f79ec29656ee3bf59f841f79f2` |
+| `nsa/nsa-cisa-csi-memory-safe-languages-2025.pdf` | National Security Agency and Cybersecurity and Infrastructure Security Agency, *Memory Safe Languages: Reducing Vulnerabilities in Modern Software Development*, Cybersecurity Information Sheet U/OO/172709-25, PP-25-2574, Version 1.0, June 2025, 19 pp. <https://media.defense.gov/2025/Jun/23/2003742198/-1/-1/0/CSI_MEMORY_SAFE_LANGUAGES_REDUCING_VULNERABILITIES_IN_MODERN_SOFTWARE_DEVELOPMENT.PDF> | PDF page 19, "Purpose" | `c6fb085da101b19ffb071fbea9c293841394b2ab51d09c529d2e59db422fcced` |
+
+## 12. CISA documents marked TLP:CLEAR
+
+Added 7 October 2026 (ground 11; owner's direction on OUTRAM PARK #760,
+which names this document). The document states on PDF page 1, verbatim:
+
+> This document is marked TLP:CLEAR. Disclosure is not limited. Sources may
+> use TLP:CLEAR when information carries minimal or no foreseeable risk of
+> misuse, in accordance with applicable rules and procedures for public
+> release. Subject to standard copyright rules, TLP:CLEAR information may be
+> distributed without restriction. For more information on the Traffic Light
+> Protocol, see cisa.gov/tlp.
+
+**Caveat, recorded so a reader can judge it.** The marking is a disclosure
+marking "subject to standard copyright rules", not a licence. The document
+is a joint publication of three U.S. Government agencies (CISA, NSA, FBI;
+their contributions are U.S. Government works under 17 U.S.C. § 105) and
+five non-U.S. government agencies (Australian Signals Directorate's ACSC,
+Canadian Centre for Cyber Security, UK NCSC, New Zealand NCSC, CERT NZ), whose
+contributions are not U.S. Government works. It carries no copyright notice
+of its own (full text searched, 7 October 2026). It is held here, whole and
+unmodified, on the owner's decision that TLP:CLEAR ("may be distributed
+without restriction") qualifies.
+
+| File | Document | SHA-256 |
+|---|---|---|
+| `cisa/cisa-case-for-memory-safe-roadmaps-2023.pdf` | CISA, NSA, FBI, ASD's ACSC, CCCS, NCSC-UK, NCSC-NZ, CERT NZ, *The Case for Memory Safe Roadmaps: Why Both C-Suite Executives and Technical Experts Need to Take Memory Safe Coding Seriously*, December 2023, 23 pp. <https://www.cisa.gov/sites/default/files/2023-12/The-Case-for-Memory-Safe-Roadmaps-508c.pdf> (byte-identical, fetched 7 October 2026) | `dfe3e72e075738e345aab81a541f72ab4c0cd149235426108090bf48787bc34b` |
+
+## 13. NASA documents
+
+Added 7 October 2026 (ground 12; owner's direction on OUTRAM PARK #760:
+"NASA (17 U.S.C. 105 / the document's release marking / NTRS 'Public Use
+Permitted')"). Each document is NASA's own publication. The basis is
+17 U.S.C. § 105 together with the strongest statement the document or its
+official page makes, quoted per row. None carries a copyright notice of its
+own (full text searched, 7 October 2026), except as noted for
+TM-2001-210876. Sources for the software-properties branch.
+
+The NASA Technical Standards System page of each standard (re-read
+7 October 2026) states, under "Export Control/Distribution Authorization":
+"Internet Public -- Standard is cleared for public accessibility on the
+internet." The two Technical Memoranda are held on the NASA Technical
+Reports Server (NTRS), whose record for each (read 7 October 2026 through the
+Internet Archive's copy, since `ntrs.nasa.gov` refuses scripted requests)
+reads: "Distribution Limits: Public. Copyright: Work of the US Gov. Public
+Use Permitted."
+
+| File | Document | Basis and where it is | SHA-256 |
+|---|---|---|---|
+| `nasa/mco-mib-phase-i-report-1999.pdf` | Mars Climate Orbiter Mishap Investigation Board (chair A.G. Stephenson, NASA MSFC), *Mars Climate Orbiter Mishap Investigation Board Phase I Report*, November 10, 1999, 48 pp. <https://llis.nasa.gov/llis_lib/pdf/1009464main1_0641-mr.pdf> (NASA Lessons Learned; byte-identical, fetched 7 October 2026) | U.S. Government Work (17 U.S.C. § 105): every board member on the signature page (PDF page 3) signs as a NASA employee (MSFC, GSFC, Ames, NASA Headquarters), and the report is approved by two NASA Associate Administrators. No release marking. | `d2d88108a22d26f8fdeeacc68aa37af2b195f2829ad768619b31c78847b6681f` |
+| `nasa/nasa-std-8739.8b-2022.pdf` | NASA-STD-8739.8B, *Software Assurance and Software Safety Standard*, approved 2022-09-08, 65 pp. <https://standards.nasa.gov/system/files/tmp/NASA-STD-87398%20REV%20B.pdf> (byte-identical), from <https://standards.nasa.gov/standard/NASA/NASA-STD-87398> | Cover: "APPROVED FOR PUBLIC RELEASE – DISTRIBUTION IS UNLIMITED". **Where:** PDF page 1. Also the NTSS statement above. | `e360f16cd3730ce32975f5207945840c1073dab7b54d3b71a443978afbe03539` |
+| `nasa/npr-7150.2d-2022.pdf` | NPR 7150.2D, *NASA Software Engineering Requirements*, NASA Procedural Requirements, Office of the Chief Engineer, effective March 08, 2022 (expires March 08, 2027), 89 pp. (the NODIS print version) <https://nodis3.gsfc.nasa.gov/npg_img/N_PR_7150_002D_/N_PR_7150_002D_.pdf> (byte-identical) | U.S. Government Work (17 U.S.C. § 105): a NASA directive issued by NASA itself, published on NASA's public directives library (NODIS). It prints no release marking (each page carries only "This document does not bind the public, except as authorized by law or as incorporated into a contract"). | `1a5b7f9b0b0141e88374adf7a21a4d6ced0b29c221ca89a0a514f495d6532802` |
+| `nasa/nasa-std-7009b-2024.pdf` | NASA-STD-7009B, *Standard for Models and Simulations*, Office of the NASA Chief Engineer, approved 2024-03-05, 88 pp. <https://standards.nasa.gov/sites/default/files/standards/NASA/B/1/NASA-STD-7009B-Final-3-5-2024.pdf> (byte-identical), from <https://standards.nasa.gov/standard/NASA/NASA-STD-7009> | The NTSS statement above (the PDF itself prints no release marking). | `7b95a2065325dc3035c35ce110557d817555d3f22210ce5f6ce0bb2fb4ccd8b4` |
+| `nasa/nasa-hdbk-7009b-2026.pdf` | NASA-HDBK-7009B, *NASA Handbook for Models and Simulations: An Implementation Guide for NASA-STD-7009B*, Office of the NASA Chief Engineer, approved 2026-02-03, 175 pp. <https://standards.nasa.gov/system/files/tmp/NASA-HDBK-7009B_Final%2002-03-2026.pdf> (byte-identical), from <https://standards.nasa.gov/standard/NASA/NASA-HDBK-7009> | Cover and every page footer: "APPROVED FOR PUBLIC RELEASE—DISTRIBUTION IS UNLIMITED". **Where:** PDF page 1 and footers. Also the NTSS statement above. **As published, with a DRAFT header:** pages from PDF page 3 on carry the running header "DRAFT: NASA-HDBK-7009B", although the file is the one NTSS posts as "NASA-HDBK-7009B_Final" and the cover gives the approval date. Filed as published (owner, #760: "DRAFT is ok"). | `dda7ef5ef938a021b6eca6a0bc74faf5a0cd27f609f4dcba1ecec7ca5f67af31` |
+| `nasa/nasa-tm-103863-nas-parallel-benchmarks.pdf` | D. Bailey, J. Barton, T. Lasinski (NASA Ames Research Center), H. Simon (Computer Sciences Corporation), editors, *The NAS Parallel Benchmarks*, NASA Technical Memorandum 103863, July 1993, 70 pp. NTRS 19940008727. <https://ntrs.nasa.gov/api/citations/19940008727/downloads/19940008727.pdf> (byte-identical to the Internet Archive's copy) | The NTRS record (<https://ntrs.nasa.gov/citations/19940008727>): "Work of the US Gov. Public Use Permitted." One editor and several chapter authors were contractors (Computer Sciences Corporation, under NASA Contract NAS 2-12961, and RIACS, as the footnotes on PDF pages 5 and 13 state); the basis is the NTRS statement, which NASA makes for the report as a whole. | `8fc0030271c9d3cb14b700673b29686f669f603e042075ffb337fd1226151dfa` |
+| `nasa/nasa-tm-2001-210876-mcdc-tutorial.pdf` | K.J. Hayhurst (NASA Langley), D.S. Veerhusen (Rockwell Collins), J.J. Chilenski (Boeing), L.K. Rierson (FAA), *A Practical Tutorial on Modified Condition/Decision Coverage*, NASA/TM-2001-210876, May 2001, 85 pp. NTRS 20010057789. <https://ntrs.nasa.gov/api/citations/20010057789/downloads/20010057789.pdf> (byte-identical to the Internet Archive's copy) | The NTRS record (<https://ntrs.nasa.gov/citations/20010057789>): "Work of the US Gov. Public Use Permitted." Two co-authors were from industry. **Third-party content:** PDF page 12 states "Information from RTCA/DO-248A is quoted throughout the tutorial with permission from the RTCA"; those quotations keep RTCA's copyright, and the file is held whole and unmodified. | `9a40d60bccc55043447fbaf390da25216942ce4529285f34eeaa279398fdbc91` |
+
+## 14. FAA advisory circulars and orders
+
+Added 7 October 2026 (ground 13; owner's direction on OUTRAM PARK #760:
+"FAA (17 U.S.C. 105)"). Each is the Federal Aviation Administration's own
+issuance (an FAA office is named under "Initiated by" on PDF page 1), so a
+work of the U.S. Government under 17 U.S.C. § 105. None carries a copyright
+notice or a distribution restriction (full text searched, 7 October 2026);
+Order 8110.49A gives "Distribution: Electronic". They recognise or cite RTCA
+and EUROCAE documents (DO-178C and its supplements), which stay copyrighted
+and are not reproduced here. Each file is byte-identical to the `faa.gov`
+URL given (fetched 7 October 2026). Sources for the software-properties
+branch.
+
+| File | Document | Initiated by | SHA-256 |
+|---|---|---|---|
+| `faa/faa-ac-20-115d-2017.pdf` | AC 20-115D, *Airborne Software Development Assurance Using EUROCAE ED-12( ) and RTCA DO-178( )*, 07/21/2017, 15 pp. <https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_20-115D.pdf> | AIR-134 | `5597a1af49c872a1a843c05601742ddcc8e8a190642f31e3cb9ce8e0dc63d91e` |
+| `faa/faa-order-8110.49a-2018.pdf` | Order 8110.49A, *Software Approval Guidelines*, effective 3/29/2018, 19 pp. <https://www.faa.gov/documentLibrary/media/Order/FAA_Order_8110.49A.pdf> | AIR-600 | `37e0c40e66dc2f509fcd3c92fc4034bf22770526667524122f184303c45632b7` |
+| `faa/faa-ac-00-69-2017.pdf` | AC 00-69, *Best Practices for Airborne Software Development Assurance Using EUROCAE ED-12( ) and RTCA DO-178( )*, 07/21/2017, 6 pp. <https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_00-69.pdf> | AIR-134 | `826ec35a2b292ed2e696e3e0263d004837eaa35ec12c30812e1e97cb96880405` |
+| `faa/faa-ac-20-193-2024.pdf` | AC 20-193, *Use of Multi-Core Processors*, 1/8/24, 18 pp. <https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_20-193.pdf> | AIR-622 | `f977071a2160ce1d14e831e70bdc363c1c62ded6c76cae09201e6d936a12bc02` |
+| `faa/faa-ac-25.1309-1b-2024.pdf` | AC 25.1309-1B, *System Design and Analysis*, 08/30/2024, 75 pp. <https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_25.1309-1B.pdf> | AIR-600 | `90e625593d472b74ec69fbcefe97649f97794410dbe844f7684b397121ac5a92` |
+
+## 15. NIST reports that state they are in the public domain
+
+Added 7 October 2026 (ground 14; owner's direction on OUTRAM PARK #760).
+The report states, verbatim (PDF page 4):
+
+> This document was written at the National Institute of Standards and
+> Technology by employees of the Federal Government in the course of their
+> official duties. Pursuant to Title 17, Section 105 of the United States
+> Code, this is not subject to copyright protection and is in the public
+> domain. We would appreciate acknowledgment if this document is used.
+
+Acknowledged here. Source for the software-properties branch.
+
+| File | Document | SHA-256 |
+|---|---|---|
+| `nist/nistir-8397-2021.pdf` | P.E. Black, B. Guttman, V. Okun, *Guidelines on Minimum Standards for Developer Verification of Software*, NISTIR 8397, National Institute of Standards and Technology, October 2021, 33 pp. <https://doi.org/10.6028/NIST.IR.8397>; file from <https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8397.pdf> (byte-identical, fetched 7 October 2026) | `cadab12c1f7b1a6a8f844d19180381211e1c29d05554bd9efb277442d8fd983d` |
