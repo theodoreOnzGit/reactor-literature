@@ -57,14 +57,13 @@ own.
 | `nrc/ML13028A421.pdf` | NUREG/KM-0004, *Fuel Behavior under Abnormal Conditions* | R.O. Meyer, U.S. NRC (retiring staff member, per the report's foreword) | January 2013 |
 | `nrc/ML13325A086.pdf` | NUREG/KM-0006, *Fundamental Theory of Scientific Computer Simulation Review* | J.S. Kaizer, U.S. NRC Office of Nuclear Reactor Regulation | November 2013 |
 | `nrc/ML16245A032.pdf` | NUREG-2201, *Probabilistic Risk Assessment and Regulatory Decisionmaking: Some Frequently Asked Questions* | N. Siu, M. Stutzke, S. Dennis, D. Harrison, U.S. NRC Office of Nuclear Regulatory Research | September 2016 |
-| `nrc/ML12338A215.pdf` | NUREG/CR-7041 (ORNL/TM-2011/21), *SCALE/TRITON Primer: A Primer for Light Water Reactor Lattice Physics Calculations* | B.J. Ade, Oak Ridge National Laboratory, for the U.S. NRC | November 2012 |
-| `nrc/ML22063A060.pdf` | NUREG/CR-7289 (ORNL/TM-2021/2002), *Nuclear Data Assessment for Advanced Reactors* | F. Bostelmann, G. Ilas, C. Celik, A.M. Holcomb, W.A. Wieselquist, Oak Ridge National Laboratory, for the U.S. NRC | March 2022 |
 | `nrc/ML070810350.pdf` | NUREG-0800, *Standard Review Plan for the Review of Safety Analysis Reports for Nuclear Power Plants*, Table of Contents, Revision 6 | U.S. NRC staff | March 2007 |
 | `nrc/ML17325A611.pdf` | Regulatory Guide 1.232, Revision 0, *Guidance for Developing Principal Design Criteria for Non-Light-Water Reactors* (ARDC, SFR-DC, MHTGR-DC) | U.S. NRC (technical lead J. Mazza) | April 2018 |
 | `nrc/nureg-1537-part1-1996.pdf` | NUREG-1537, Part 1, *Guidelines for Preparing and Reviewing Applications for the Licensing of Non-Power Reactors: Format and Content* | U.S. NRC Office of Nuclear Reactor Regulation | February 1996 |
 | `nrc/nureg-1520-rev2-2015.pdf` | NUREG-1520, Revision 2, *Standard Review Plan for Fuel Cycle Facilities License Applications*, Final Report | U.S. NRC Office of Nuclear Material Safety and Safeguards | 2015 |
 | `nrc/nureg-1555-1999.pdf` | NUREG-1555, *Standard Review Plans for Environmental Reviews for Nuclear Power Plants* (Environmental Standard Review Plan) | U.S. NRC Office of Nuclear Reactor Regulation | October 1999 |
 | `nrc/nureg-0654-fema-rep-1-rev2-2019.pdf` | NUREG-0654/FEMA-REP-1, Revision 2, *Criteria for Preparation and Evaluation of Radiological Emergency Response Plans and Preparedness in Support of Nuclear Power Plants*, Final Report | U.S. NRC and the Federal Emergency Management Agency (both U.S. Government) | December 2019 |
+| `nrc/nureg-br-0167-1993-sqa-program-and-guidelines.pdf` | NUREG/BR-0167, *Software Quality Assurance Program and Guidelines* (scanned; 58 pp.). Software QA source for Kovan's concept tree (`software-quality-assurance`, OUTRAM PARK #760) | U.S. NRC, Division of Information Support Services, Office of Information Resources Management | February 1993 |
 
 **Added 6 October 2026** (the six rows from `ML070810350` down), supplied by
 the owner as the sources of Kovan's new concept-tree skeleton (OUTRAM PARK
@@ -75,9 +74,11 @@ named by report number instead. Their `corpus.rs` entries follow when Kovan's
 new concept schema lands (#727). NUREG-0654/FEMA-REP-1 is a joint NRC–FEMA
 publication; both are U.S. Government agencies, so 17 U.S.C. § 105 covers it.
 
-The two NUREG/CR reports were prepared by a contractor (Oak Ridge National
+~~The two NUREG/CR reports were prepared by a contractor (Oak Ridge National
 Laboratory) under NRC sponsorship and published by the NRC in its NUREG series.
-They are included on the basis of the NRC statement above, as NRC publications.
+They are included on the basis of the NRC statement above, as NRC publications.~~
+**MOVED 2026-10-07:** the two NUREG/CR reports are no longer held here; see
+section 7. Ground 1 now holds only documents written by the NRC itself.
 
 ## 2. Open access, CC BY 4.0
 
@@ -181,6 +182,7 @@ The same ground is used in the owner's open corpus
 | File | Document | Basis |
 |---|---|---|
 | `us-doe/ornl-tm-2018-976-msr-nureg0800-gap-analysis.pdf` | R.J. Belles, G.F. Flanagan, *Regulatory Gap Analysis of Select NUREG-0800 Chapters for Applicability to Molten Salt Reactors*, ORNL/TM-2018/976, Oak Ridge National Laboratory (managed by UT-Battelle, LLC) for the U.S. Department of Energy, October 2018. Source of the MSR extension of Kovan's concept tree (OUTRAM PARK #726) | The cover states "Approved for public release. Distribution is unlimited." (checked 6 October 2026) **Where:** PDF page 1 (the cover). |
+| `us-doe/doe-std-1172-2003-safety-software-qa-faqs.pdf` | DOE-STD-1172-2003, *Safety Software Quality Assurance Functional Area Qualification Standard*, U.S. Department of Energy, December 2003 (23 pp.). A DOE technical standard. Software QA source for Kovan's concept tree (OUTRAM PARK #760). Superseded by DOE-STD-1172-2011, not yet filed | The front matter states "DISTRIBUTION STATEMENT A. Approved for public release; distribution is unlimited." (checked 7 October 2026) **Where:** PDF page 1, below the title block. |
 
 ## 5. European Commission documents, reuse authorised
 
@@ -218,3 +220,29 @@ The files were collected by the repository owner and added on 22 September
 front-matter pages; licence details from the sources cited in each section.
 Nothing here is a restricted or proprietary document; anything that is must
 not be added to this repository.
+
+
+## 7. The rule for this corpus, and what moved out (2026-10-07)
+
+**Rule (owner, 7 October 2026):** a document belongs here only if it is
+**explicitly available for redistribution**: by its own marking, by a statement
+of its issuer that covers it, or by being a work of the U.S. Government
+itself. "As long as it is available for redistribution, it is safe in standard
+corpus." A report written by a contractor qualifies only through such an
+explicit statement: the ORNL report in section 4 ("Approved for public
+release. Distribution is unlimited.") and the EPA reports in section 3 (EPA's
+"may be freely distributed ... for non-commercial, scientific and educational
+purposes") stay on that basis.
+
+The two NUREG/CR reports below carry no redistribution statement of their own
+(only the NRC's notice of where copies can be obtained), and the NRC's site
+disclaimer, written for the NRC's own website and publications, does not
+plainly cover contractor-written reports. They were therefore moved to the
+owner's private corpus, where Kovan cites them without redistributing them.
+They remain in this repository's git history, and both are publicly available
+from the NRC.
+
+| Former file | Document | Public source |
+|---|---|---|
+| `nrc/ML12338A215.pdf` | NUREG/CR-7041 (ORNL/TM-2011/21), *SCALE/TRITON Primer* (ORNL for the NRC) | <https://www.nrc.gov/docs/ML1233/ML12338A215.pdf> |
+| `nrc/ML22063A060.pdf` | NUREG/CR-7289 (ORNL/TM-2021/2002), *Nuclear Data Assessment for Advanced Reactors* (ORNL for the NRC) | <https://www.nrc.gov/docs/ML2206/ML22063A060.pdf> |
