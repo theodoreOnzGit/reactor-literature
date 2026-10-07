@@ -8,7 +8,7 @@ never shipped in the Kovan crate. Only documents in this folder are
 hardcoded into Kovan. The owner's other open literature is in
 [`../theodore-open-corpus/`](../theodore-open-corpus/).
 
-Every document here is redistributable, on one of six grounds:
+Every document here is redistributable, on one of ~~six~~ seven grounds:
 
 1. **U.S. NRC documents: open access, U.S. Government Work.**
 2. **Open access under the Creative Commons Attribution licence (CC BY 4.0).**
@@ -21,6 +21,10 @@ Every document here is redistributable, on one of six grounds:
    acknowledgement** (added 6 October 2026; see section 5).
 6. **U.S. federal regulations: the Code of Federal Regulations** (added
    6 October 2026; see section 6).
+7. **Documents released by their copyright holder under a permissive
+   open-source licence (BSD-style) that permits redistribution** (added
+   7 October 2026, owner's direction; see section 8, since section 7 already
+   holds the corpus rule).
 
 ## 1. U.S. NRC documents
 
@@ -259,3 +263,49 @@ from the NRC.
 |---|---|---|
 | `nrc/ML12338A215.pdf` | NUREG/CR-7041 (ORNL/TM-2011/21), *SCALE/TRITON Primer* (ORNL for the NRC) | <https://www.nrc.gov/docs/ML1233/ML12338A215.pdf> |
 | `nrc/ML22063A060.pdf` | NUREG/CR-7289 (ORNL/TM-2021/2002), *Nuclear Data Assessment for Advanced Reactors* (ORNL for the NRC) | <https://www.nrc.gov/docs/ML2206/ML22063A060.pdf> |
+
+## 8. Permissive open-source licence (BSD-style)
+
+Added 7 October 2026 at the owner's direction (OUTRAM PARK GitHub #760,
+question 8: "NJOY may not apply to everyone, but it is the bedrock of nuclear
+science"). A document belongs here when its copyright holder publishes it
+under a permissive open-source licence whose text grants redistribution. The
+basis is that licence, quoted with where it is; the licence's conditions are
+met by keeping its full text beside the file.
+
+The NJOY2016 manual is the work of a contractor (Los Alamos National
+Security, LLC, for the U.S. Department of Energy), so it is not claimed as a
+U.S. Government Work under 17 U.S.C. § 105, and it carries no "distribution
+unlimited" marking (ground 4). Its basis is the licence alone. The manual's
+own repository, <https://github.com/njoy/NJOY2016-manual> (branch `master`,
+commit `9a2951f48b07244ae29123b5f425e4ae49e7497a`, 2 March 2022; checked
+7 October 2026 through the GitHub API), ships a `LICENSE` file that reads,
+in part:
+
+> Copyright (c) 2016, Los Alamos National Security, LLC
+> All rights reserved.
+> [...]
+> Additionally, redistribution and use in source and binary forms, with or
+> without modification, are permitted provided that the following conditions
+> are met:
+> 1. Redistributions of source code must retain the above copyright notice,
+> this list of conditions and the following disclaimer.
+> 2. Redistributions in binary form must reproduce the above copyright notice,
+> this list of conditions and the following disclaimer in the documentation
+> and/or other materials provided with the distribution.
+> 3. Neither the name of Los Alamos National Security, LLC, Los Alamos
+> National Laboratory, LANL, the U.S. Government, nor the names of its
+> contributors may be used to endorse or promote products derived from this
+> software without specific prior written permission.
+
+The full text is kept, byte for byte, as
+[`lanl/LICENSE-NJOY2016-manual.txt`](lanl/LICENSE-NJOY2016-manual.txt) (its
+Git blob `0604264…` equals the repository's `LICENSE` at that commit), which
+satisfies condition 2 for this copy. The same notice is printed in the manual
+itself, on PDF page 2 ("Copyright Notice: Copyright 2016. Los Alamos National
+Security, LLC …", followed by the three conditions). Its inclusion here
+implies no endorsement by LANS, LANL or the U.S. Government (condition 3).
+
+| File | Document | Basis |
+|---|---|---|
+| `lanl/2022laur1720093.pdf` | R.E. MacFarlane (original author), with D.W. Muir, R.M. Boicourt, A.C. Kahler, J.L. Conlin, W. Haeck (contributing authors); A.C. Kahler (current editor), *The NJOY Nuclear Data Processing System, Version 2016*, LA-UR-17-20093, Los Alamos National Laboratory. Original issue 19 December 2016; this copy is "Updated for NJOY2016.53, November 7, 2019" (title page), 816 pp. Source: <https://github.com/njoy/NJOY2016-manual> | The licence quoted above. **Where:** the repository's `LICENSE` (commit `9a2951f`), and PDF page 2 of the manual. **Edition:** byte-identical to the repository's `njoy16.pdf` at commit `9a2951f` (same Git blob `7660ec9…`, 4 531 624 bytes; SHA-256 `4e32e95a…9f40`; checked 7 October 2026). That commit is the latest on `master` as of that date, and the last to change `njoy16.pdf` was `4ae16cc` (2 March 2022), so no newer edition of the PDF is published there. Moved here from `../theodore-open-corpus/` (its ground 6) on 7 October 2026. |

@@ -102,7 +102,8 @@ each marked for unlimited distribution.
 
 | File | Document | Licence |
 |---|---|---|
-| `2022laur1720093.pdf` | R.E. MacFarlane (original author), with D.W. Muir, R.M. Boicourt, A.C. Kahler, J.L. Conlin, W. Haeck et al., *The NJOY Nuclear Data Processing System, Version 2016*, LA-UR-17-20093, Los Alamos National Laboratory (revision dated November 7, 2019). The manual's source is published at <https://github.com/njoy/NJOY2016-manual> | The manual repository's `LICENSE` (checked at commit `9a2951f`, 2026-10-02) is Los Alamos National Security, LLC's **BSD-3-Clause-style** licence: "redistribution and use in source and binary forms, with or without modification, are permitted provided that" the copyright notice and disclaimer are retained, with a no-endorsement clause. **Where:** the same notice is printed in the PDF on page 2 ("Copyright Notice: Copyright 2016. Los Alamos National Security, LLC …"), so this unmodified copy carries it. Row added 2026-10-02; the file had been committed without one. |
+
+**MOVED 2026-10-07:** the NJOY2016 manual is no longer held here. At the owner's direction (OUTRAM PARK #760, question 8) it is now in Kovan's standard corpus, at `../kovan-standard-open-corpus/lanl/2022laur1720093.pdf`, with the licence text beside it; see that README's ground 7 (section 8). No other document here currently rests on ground 6.
 
 ## 7. Open access, CC BY-NC-ND
 
