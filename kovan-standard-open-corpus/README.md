@@ -179,10 +179,23 @@ not 17 U.S.C. § 105; the marking is quoted, with where it is, for each file.
 The same ground is used in the owner's open corpus
 (`../theodore-open-corpus/README.md`, section 4).
 
+**Extended 7 October 2026 (owner: "it is standard corpus, since it is easy
+to distribute"):** ground 4 also covers **documents written by DOE itself**,
+such as DOE directives and guides, whose cover marks a distribution channel
+rather than "unlimited distribution". They are U.S. Government Works (17
+U.S.C. § 105), and DOE's Copyright, Restrictions and Permissions Notice
+(<https://www.energy.gov/web-policies>, accessed 7 October 2026) states:
+"Government information at DOE websites is in the public domain. Public domain
+information may be freely distributed and copied, but it is requested that in
+any subsequent use the Department of Energy be given appropriate
+acknowledgement." Each such document is credited to the U.S. Department of
+Energy below.
+
 | File | Document | Basis |
 |---|---|---|
 | `us-doe/ornl-tm-2018-976-msr-nureg0800-gap-analysis.pdf` | R.J. Belles, G.F. Flanagan, *Regulatory Gap Analysis of Select NUREG-0800 Chapters for Applicability to Molten Salt Reactors*, ORNL/TM-2018/976, Oak Ridge National Laboratory (managed by UT-Battelle, LLC) for the U.S. Department of Energy, October 2018. Source of the MSR extension of Kovan's concept tree (OUTRAM PARK #726) | The cover states "Approved for public release. Distribution is unlimited." (checked 6 October 2026) **Where:** PDF page 1 (the cover). |
 | `us-doe/doe-std-1172-2003-safety-software-qa-faqs.pdf` | DOE-STD-1172-2003, *Safety Software Quality Assurance Functional Area Qualification Standard*, U.S. Department of Energy, December 2003 (23 pp.). A DOE technical standard. Software QA source for Kovan's concept tree (OUTRAM PARK #760). Superseded by DOE-STD-1172-2011, not yet filed | The front matter states "DISTRIBUTION STATEMENT A. Approved for public release; distribution is unlimited." (checked 7 October 2026) **Where:** PDF page 1, below the title block. |
+| `us-doe/doe-g-414-1-4-2005-safety-software-guide.pdf` | DOE G 414.1-4, *Safety Software Guide for Use with 10 CFR 830 Subpart A, Quality Assurance Requirements, and DOE O 414.1C, Quality Assurance*, U.S. Department of Energy (initiated by the Office of Environment, Safety and Health); approved 17 June 2005, certified 3 November 2010 (103 pp.). Written by DOE itself; still listed among DOE's quality assurance directives on 7 October 2026 (its parent order DOE O 414.1C is now DOE O 414.1D Chg 1). Software QA source for Kovan's concept tree (OUTRAM PARK #760): software types, grading levels A/B/C, the ten SQA work activities. Copy from energy.gov (also in NRC ADAMS as ML12179A228), SHA-256 `8330c44a…` | U.S. Government Work (17 U.S.C. § 105) and DOE's public-domain notice above (extended ground 4). The cover gives only "DISTRIBUTION: http://www.directives.doe.gov" (PDF page 1, bottom left) and carries no copyright notice (all 103 pages searched, 7 October 2026). |
 
 ## 5. European Commission documents, reuse authorised
 
