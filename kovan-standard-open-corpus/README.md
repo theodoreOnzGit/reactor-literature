@@ -357,6 +357,26 @@ The SAND, LANL and ORNL reports are contractor-written, so their basis is
 the marking alone, not 17 U.S.C. § 105. The two LANL items are slide decks,
 each released as a LANL report under its LA-UR number.
 
+**Added 10 October 2026** (OUTRAM PARK #829, the Sciences concept tree;
+owner: "For DOE, as long as redistributable, and copyright checks out and can
+be verified, I'm fine adding them in"): three more DOE Fundamentals
+Handbooks, in the same series as DOE-HDBK-1012 and 1019 above. Each file was
+fetched from energy.gov on 10 October 2026 with a plain request; the marking
+was read from the file's cover (`pdftotext`), and every file's full text was
+searched for a copyright notice and none carries one. Each is written by DOE
+itself (U.S. Government Work, 17 U.S.C. § 105) as well as marked
+Distribution Statement A. The SHA-256 is of the file as filed, which is the
+file as downloaded.
+
+| File | Document | Basis | SHA-256 |
+|---|---|---|---|
+| `us-doe/doe-hdbk-1017-1-93-material-science.pdf` | DOE-HDBK-1017/1-93, *DOE Fundamentals Handbook: Material Science*, Volume 1 of 2 (Module 1 Structure of Metals; Module 2 Properties of Metals), U.S. Department of Energy, January 1993, 102 pp. <https://www.energy.gov/sites/default/files/2026-04/DOE-HDBK-1017-93_VOL1.pdf> | The cover states "Distribution Statement A. Approved for public release; distribution is unlimited." **Where:** PDF page 1. | `65e627812b191020cfa34446b37b85b82e53e0f35f6dbb81d2e61baf1fa1999c` |
+| `us-doe/doe-hdbk-1017-2-93-material-science.pdf` | DOE-HDBK-1017/2-93, the same handbook, Volume 2 of 2 (Module 3 Thermal Shock; Module 4 Brittle Fracture; Module 5 Plant Materials), January 1993, 112 pp. <https://www.energy.gov/sites/default/files/2026-04/DOE-HDBK-1017-93_VOL2.pdf> | As Volume 1. **Where:** PDF page 1. | `78ff5c57adf6c2b5c01dac01d9c42a5af51eeb7b8c236e899ac30475804648ff` |
+| `us-doe/doe-hdbk-1015-1-93-chemistry.pdf` | DOE-HDBK-1015/1-93, *DOE Fundamentals Handbook: Chemistry*, Volume 1 of 2 (Module 1 Fundamentals of Chemistry; Module 2 Corrosion), U.S. Department of Energy, January 1993, 140 pp. <https://www.energy.gov/sites/default/files/2026-04/DOE-HDBK-1015-93_VOL1.pdf> | The cover states "Distribution Statement A. Approved for public release; distribution is unlimited." **Where:** PDF page 1. | `73627c9e9b6924d09e7207a435886ddc93cbc9057869b3ef39c8ff5765e73846` |
+| `us-doe/doe-hdbk-1015-2-93-chemistry.pdf` | DOE-HDBK-1015/2-93, the same handbook, Volume 2 of 2 (Module 3 Reactor Water Chemistry; Module 4 Principles of Water Treatment; Module 5 Hazards of Chemicals and Gases), January 1993, 138 pp. <https://www.energy.gov/sites/default/files/2026-04/DOE-HDBK-1015-93_VOL2.pdf> | As Volume 1. **Where:** PDF page 1. | `8270d422322fc09b8e8ea3d138745b0a40588964c79942c3cba643e54a925820` |
+| `us-doe/doe-hdbk-1014-1-92-mathematics.pdf` | DOE-HDBK-1014/1-92, *DOE Fundamentals Handbook: Mathematics*, Volume 1 of 2 (Module 1 Review of Introductory Mathematics; Module 2 Algebra), U.S. Department of Energy, June 1992, 206 pp. <https://www.energy.gov/sites/default/files/2026-04/DOE-HDBK-1014-92_VOL1.pdf> | The cover states "Distribution Statement A. Approved for public release; distribution is unlimited." **Where:** PDF page 1. | `e1e3961e7e43574b2df06563c8a196c2d8ac5267e6d2cf1ee2ff1540fc6f98ed` |
+| `us-doe/doe-hdbk-1014-2-92-mathematics.pdf` | DOE-HDBK-1014/2-92, the same handbook, Volume 2 of 2 (Module 3 Geometry; Module 4 Trigonometry; Module 5 Higher Concepts of Mathematics), June 1992, 112 pp. <https://www.energy.gov/sites/default/files/2026-04/DOE-HDBK-1014-92_VOL2.pdf> | As Volume 1. **Where:** PDF page 1. | `f3f3272d738e9bdfcf1369df24c04bda1f616056835f2792193d4964e1ac0715` |
+
 ## 5. European Commission documents, reuse authorised
 
 Added 6 October 2026: a European Commission (Joint Research Centre) report
@@ -390,8 +410,8 @@ on the date in its name.
 
 The files were collected by the repository owner and added on 22 September
 2026, except the three EPA reports, added on 28 September 2026, and the
-documents marked "Added 6 October 2026" or "Added 7 October 2026" in their
-sections (those of 7 October were found by search agents for OUTRAM PARK #760
+documents marked "Added 6 October 2026", "Added 7 October 2026" or "Added
+10 October 2026" in their sections (those of 7 October were found by search agents for OUTRAM PARK #760
 and each re-verified from the file, or its official landing page, before
 filing). The 26 software-properties sources of 7 October 2026 (sections 1,
 2 and 11 to 15) were re-read that day from the files: each basis below is
