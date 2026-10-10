@@ -37,7 +37,9 @@ Every document here is redistributable, on one of ~~six~~ ~~seven~~ ~~nine~~ fou
 9. **Creative Commons licences other than CC BY, printed on the document or
    its official landing page: CC BY-SA, CC BY-NC, CC BY-NC-ND** (added
    7 October 2026, owner's direction on #760: "CC BY-NC-ND qualifies"; see
-   section 10).
+   section 10). **Extended 10 October 2026** to **CC BY-NC-SA** (owner, for
+   the OpenStax physics textbooks, OUTRAM PARK #829: "Could u add the
+   openstax physics in then?").
 10. **U.S. National Security Agency publications that state they "may be
     shared broadly"** (added 7 October 2026, owner's direction on #760; see
     section 11).
@@ -595,18 +597,35 @@ printed in the files themselves, read that day.
 
 Added 7 October 2026 (ground 9; owner on OUTRAM PARK #760: "CC BY-NC-ND
 qualifies"). A document belongs here when its own page or its official
-landing page states one of CC BY-SA, CC BY-NC or CC BY-NC-ND. The licence is
+landing page states one of CC BY-SA, CC BY-NC, CC BY-NC-ND or (since
+10 October 2026) CC BY-NC-SA. The licence is
 quoted with where it is. These licences permit redistribution of verbatim
 copies with attribution (the NC licences for non-commercial use only; the ND
 licence forbids distributing modified versions, so these files are kept
 unmodified). The attribution is the citation below. Sources for Kovan's
-solver-pattern concepts.
+solver-pattern concepts and (the OpenStax textbooks) its Sciences tree.
 
 | File | Document | Licence and where it is | SHA-256 |
 |---|---|---|---|
 | `cc-by-sa/arxiv-2306.01924v2-multiregionfoam.pdf` | H. Alkafri, C. Habes, M.E. Fadeli, S. Hess, S.B. Beale, S. Zhang, H. Jasak, H. Marschall, "multiRegionFoam -- A Unified Multiphysics Framework for Multi-Region Coupled Continuum-Physical Problems", arXiv:2306.01924v2 [physics.comp-ph], 9 July 2023 (v1 2 June 2023), 36 pp., <https://arxiv.org/abs/2306.01924v2> | **CC BY-SA 4.0**: the arXiv record (re-read 7 October 2026) links its licence to <http://creativecommons.org/licenses/by-sa/4.0/>. The PDF does not restate it. Byte-identical to <https://arxiv.org/pdf/2306.01924v2> (re-fetched that day) | `15d348cb1358c1cecf1a1f373a132f875b3ff9f790a941b219262c7045bf69e0` |
 | `cc-by-nc-nd/arxiv-2301.00289v3-wang-picard-stability.pdf` | D. Wang (Nuclear Engineering Program, The Ohio State University), "Stability Analysis of Picard Iteration for Coupled Neutronics/Thermal-Hydraulics Simulations", arXiv:2301.00289v3, 4 March 2023 (v1 31 December 2022), 4 pp., <https://arxiv.org/abs/2301.00289v3> | **CC BY-NC-ND 4.0**: the arXiv record of v3 (re-read 7 October 2026) links its licence to <http://creativecommons.org/licenses/by-nc-nd/4.0/>. The PDF does not restate it. Byte-identical to <https://arxiv.org/pdf/2301.00289v3> (fetched that day) | `0ad6c6a34a7f044b8b77d6d375eaeda7f197d8e31c8442d04cc318cc6653dd3a` |
 | `cc-by-nc-nd/cosgrove2020-pc-stability-cam-309913.pdf` | P. Cosgrove, E. Shwageraus, G.T. Parks (Department of Engineering, University of Cambridge), "Stability analysis of predictor-corrector schemes for coupling neutronics and depletion", accepted manuscript of the article in *Annals of Nuclear Energy* (Elsevier, ISSN 0306-4549, publisher DOI <https://doi.org/10.1016/j.anucene.2020.107781>), deposited in the University of Cambridge repository, <https://www.repository.cam.ac.uk/handle/1810/309913>, DOI <https://doi.org/10.17863/CAM.57013>, publication date 15 December 2020 as recorded there, 20 pp. | **CC BY-NC-ND 4.0**: the repository page (re-read 7 October 2026) states, under "Rights and licensing": "Except where otherwised noted, this item's license is described as Attribution-NonCommercial-NoDerivatives 4.0 International" (linked to <https://creativecommons.org/licenses/by-nc-nd/4.0/>). Byte-identical to the repository's download of the file (re-fetched that day) | `181efc228fdd96bbb454ab507dde88ace9811d5ead69efe8fe2f9a405e5ef51b` |
+| `cc-by-nc-sa/openstax2016-university-physics-volume-1.pdf` | S.J. Ling, J. Sanny, W. Moebs (senior contributing authors), *University Physics Volume 1*, OpenStax, Rice University, Houston TX, original publication year 2016, PDF ©2026 Rice University (PDF dated 27 April 2026), digital ISBN-13 978-1-947172-20-3, 959 pp. <https://openstax.org/details/books/university-physics-volume-1> | **CC BY-NC-SA 4.0**: the copyright page (PDF page 4) states "©2026 Rice University. Textbook content produced by OpenStax is licensed under a Creative Commons Attribution Non-Commercial ShareAlike 4.0 International License (CC BY-NC-SA 4.0)." The OpenStax CMS record gives the same licence (<https://creativecommons.org/licenses/by-nc-sa/4.0/>). The copyright page asks a redistributor of the PDF to keep the attribution "Access for free at openstax.org." on every page; it is printed in the footer of 479 of the 959 pages as distributed, and the file is kept unmodified. Byte-identical to <https://assets.openstax.org/oscms-prodcms/media/documents/university-physics-volume-1_-_WEB.pdf> (fetched 10 October 2026) | `93652b69c43197d10dc83438b813b5f7515e61e7ea4336da8636ff902cb4aba8` |
+| `cc-by-nc-sa/openstax2016-university-physics-volume-2.pdf` | S.J. Ling, J. Sanny, W. Moebs (senior contributing authors), *University Physics Volume 2*, OpenStax, Rice University, Houston TX, original publication year 2016, PDF ©2026 Rice University (PDF dated 27 April 2026), digital ISBN-13 978-1-947172-21-0, 781 pp. <https://openstax.org/details/books/university-physics-volume-2> | **CC BY-NC-SA 4.0**: the copyright page (PDF page 4) states "©2026 Rice University. Textbook content produced by OpenStax is licensed under a Creative Commons Attribution Non-Commercial ShareAlike 4.0 International License (CC BY-NC-SA 4.0)." The OpenStax CMS record gives the same licence (<https://creativecommons.org/licenses/by-nc-sa/4.0/>). The copyright page asks a redistributor of the PDF to keep the attribution "Access for free at openstax.org." on every page; it is printed in the footer of 390 of the 781 pages as distributed, and the file is kept unmodified. Byte-identical to <https://assets.openstax.org/oscms-prodcms/media/documents/university-physics-volume-2_-_WEB.pdf> (fetched 10 October 2026) | `3f5d8d0e38ba663c84a036b54cf6087bc2836adca553cb7849f2c0e85e97a445` |
+| `cc-by-nc-sa/openstax2016-university-physics-volume-3.pdf` | S.J. Ling, J. Sanny, W. Moebs (senior contributing authors), *University Physics Volume 3*, OpenStax, Rice University, Houston TX, original publication year 2016, PDF ©2026 Rice University (PDF dated 27 April 2026), digital ISBN-13 978-1-947172-22-7, 597 pp. <https://openstax.org/details/books/university-physics-volume-3> | **CC BY-NC-SA 4.0**: the copyright page (PDF page 4) states "©2026 Rice University. Textbook content produced by OpenStax is licensed under a Creative Commons Attribution Non-Commercial ShareAlike 4.0 International License (CC BY-NC-SA 4.0)." The OpenStax CMS record gives the same licence (<https://creativecommons.org/licenses/by-nc-sa/4.0/>). The copyright page asks a redistributor of the PDF to keep the attribution "Access for free at openstax.org." on every page; it is printed in the footer of 298 of the 597 pages as distributed, and the file is kept unmodified. Byte-identical to <https://assets.openstax.org/oscms-prodcms/media/documents/university-physics-volume-3_-_WEB.pdf> (fetched 10 October 2026) | `311c6beb70bb9cc6073d40a6085d290a82afde2b38e9aaf672ccb6de0542541b` |
+
+**Added 10 October 2026** (OUTRAM PARK #829, the Sciences concept tree;
+ground 9 extended to CC BY-NC-SA by the owner that day): OpenStax *University
+Physics* Volumes 1 to 3 (the three `cc-by-nc-sa/` rows above). Each file was
+found through the OpenStax CMS API
+(`https://openstax.org/apps/cms/api/v2/pages/?type=books.Book&slug=<slug>&fields=*`,
+whose `pdf_url` is the only PDF offered) and fetched on 10 October 2026 with
+a plain request; the licence was read from the file's copyright page with
+`pdftotext`. The three files are 81.5, 63.8 and 53.5 MB, above GitHub's
+50 MB warning size and below its 100 MB limit. *College Physics 2e*, also
+approved, was **not filed**: its only PDF
+(`college-physics-2e_-_WEB.pdf`) is 263 MB, over GitHub's 100 MB file limit;
+Kovan cites it from the web.
 
 ## 11. U.S. National Security Agency publications that may be shared broadly
 
