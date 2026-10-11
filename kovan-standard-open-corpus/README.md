@@ -31,6 +31,10 @@ Every document here is redistributable, on one of ~~six~~ ~~seven~~ ~~nine~~ fou
    GitHub #760: "project documentation under a software licence that covers
    its documentation") to project documentation shipped under the project's
    open-source licence: MIT (OpenMC), LGPL 2.1 (MOOSE), as well as BSD.
+   **Extended 11 October 2026** (OUTRAM PARK #832; the owner: "Nuclear
+   chemistry is ok") to PFLOTRAN's documentation under its LGPL 3.0 and
+   Battelle's BSD-style notice, which names "associated documentation
+   files" (see section 8).
 8. **Other works of the U.S. Government that state on their face that they
    are not subject to copyright** (added 7 October 2026: the Congressional
    Research Service and the Government Accountability Office; see section 9).
@@ -380,6 +384,22 @@ file as downloaded.
 | `us-doe/doe-hdbk-1014-1-92-mathematics.pdf` | DOE-HDBK-1014/1-92, *DOE Fundamentals Handbook: Mathematics*, Volume 1 of 2 (Module 1 Review of Introductory Mathematics; Module 2 Algebra), U.S. Department of Energy, June 1992, 206 pp. <https://www.energy.gov/sites/default/files/2026-04/DOE-HDBK-1014-92_VOL1.pdf> | The cover states "Distribution Statement A. Approved for public release; distribution is unlimited." **Where:** PDF page 1. | `e1e3961e7e43574b2df06563c8a196c2d8ac5267e6d2cf1ee2ff1540fc6f98ed` |
 | `us-doe/doe-hdbk-1014-2-92-mathematics.pdf` | DOE-HDBK-1014/2-92, the same handbook, Volume 2 of 2 (Module 3 Geometry; Module 4 Trigonometry; Module 5 Higher Concepts of Mathematics), June 1992, 112 pp. <https://www.energy.gov/sites/default/files/2026-04/DOE-HDBK-1014-92_VOL2.pdf> | As Volume 1. **Where:** PDF page 1. | `f3f3272d738e9bdfcf1369df24c04bda1f616056835f2792193d4964e1ac0715` |
 
+**Added 11 October 2026** (OUTRAM PARK #832, the Sciences tree's nuclear
+chemistry; the owner approved these sources that day: "Nuclear chemistry is
+ok"): two ORNL reports from OSTI, for plate-out in gas-cooled reactors and
+for radiolysis of molten fluoride salts. Each file was fetched from the OSTI
+URL given with a plain request; the markings were read from the file
+(`pdftotext`, and by eye from the page image where the OCR garbles them), and
+each file's full text was searched for a copyright notice and none carries
+one (both are OCR scans, so that search is only as good as the OCR). Both
+are contractor-written, so their basis is the marking, not 17 U.S.C. § 105.
+The SHA-256 is of the file as filed, which is the file as downloaded.
+
+| File | Document | Basis | SHA-256 |
+|---|---|---|---|
+| `us-doe/ornl-tm-11685-nureg-cr-5647-fp-plateout-liftoff-mhtgr.pdf` | R.P. Wichner, *Fission Product Plateout and Liftoff in the MHTGR Primary System: A Review*, NUREG/CR-5647, ORNL/TM-11685, Oak Ridge National Laboratory (Martin Marietta Energy Systems, Inc., under DOE contract DE-AC05-84OR21400) for the Division of Regulatory Applications, Office of Nuclear Regulatory Research, U.S. Nuclear Regulatory Commission (NRC FIN A9477); manuscript completed January 1991, published April 1991, 133 pp. (OCR scan), 5,993,062 B. <https://www.osti.gov/servlets/purl/5875738>. Source for plate-out of fission products on primary-system surfaces and dust in HTGRs (Sciences node `transport-and-deposition-in-coolant`) | The cover is stamped "DISTRIBUTION OF THIS DOCUMENT IS UNLIMITED" (the OCR text layer reads "DUCMM^liT" for "DOCUMENT"; read from the page image). **Where:** PDF page 1, bottom. It also carries the U.S. Government sponsorship disclaimer (PDF page 1) and no copyright notice. | `b8e66d8072d8e45f5ccd265f4a44cd61790c7bfb9beb25821d626f7a23c52d21` |
+| `us-doe/ornl-tm-3144-fluorine-frozen-msr-salts.pdf` | P.N. Haubenreich, *Fluorine Production and Recombination in Frozen MSR Salts After Reactor Operation*, ORNL-TM-3144, Oak Ridge National Laboratory (Union Carbide Corporation for the U.S. Atomic Energy Commission), 30 September 1970, 37 pp. (scan), 2,054,311 B. <https://www.osti.gov/servlets/purl/4109510> (OSTI ID 4109510). Source for radiolysis of frozen fluoride salts and recombination when hot (Sciences node `radiolysis-and-coolant-chemistry`) | Stamped "DISTRIBUTION OF THIS DOCUMENT IS UNLIMITED". **Where:** PDF page 1 (bottom of the cover) and PDF page 3 (below the Legal Notice). **Also on the cover**, the original 1970 notice: "This document contains information of a preliminary nature and was prepared primarily for internal use at the Oak Ridge National Laboratory. It is subject to revision or correction and therefore does not represent a final report." The later unlimited-distribution stamp is the basis; the owner accepted the report with both notices on 11 October 2026 (#832). No copyright notice. | `f4b8a71d580d8e4e549205ddd6ce49e90e0157983afb61ce37233c4496f8ea11` |
+
 ## 5. European Commission documents, reuse authorised
 
 Added 6 October 2026: a European Commission (Joint Research Centre) report
@@ -413,8 +433,8 @@ on the date in its name.
 
 The files were collected by the repository owner and added on 22 September
 2026, except the three EPA reports, added on 28 September 2026, and the
-documents marked "Added 6 October 2026", "Added 7 October 2026" or "Added
-10 October 2026" in their sections (those of 7 October were found by search agents for OUTRAM PARK #760
+documents marked "Added 6 October 2026", "Added 7 October 2026", "Added
+10 October 2026" or "Added 11 October 2026" in their sections (those of 7 October were found by search agents for OUTRAM PARK #760
 and each re-verified from the file, or its official landing page, before
 filing). The 26 software-properties sources of 7 October 2026 (sections 1,
 2 and 11 to 15) were re-read that day from the files: each basis below is
@@ -552,6 +572,53 @@ copied verbatim and unmodified, with both files beside them.
 | `moose-docs/PIMPLE.md` | MOOSE Navier–Stokes module documentation, "PIMPLE" executioner (SIMPLE combined with PISO) | `modules/navier_stokes/doc/content/source/executioners/PIMPLE.md` (last changed in `6f79819`, 21 September 2026) | `340e33ede08fe75436e51bc2f97201b4d81ed17dc1b9cad1114d0712b69f588a` |
 | `moose-docs/LICENSE` | MOOSE's LGPL 2.1 text | `LICENSE` | `dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551` |
 | `moose-docs/COPYRIGHT` | MOOSE's copyright notices | `COPYRIGHT` | `00c942e96f0c7dd5cb843e6e866a5330120bd896c5ee3d195bc3527d3e296288` |
+
+**Added 11 October 2026** (OUTRAM PARK #832; the owner approved these
+sources that day: "Nuclear chemistry is ok"): four more MOOSE pages, for the
+Sciences tree's momentum balance of a solid and the finite element method,
+and two PFLOTRAN theory-guide pages, for groundwater transport of
+radionuclides with sorption. Each is a documentation source file copied
+verbatim and unmodified from a clone of the repository at the commit given
+(both clones shallow, so each file's last-changed commit is not recorded
+here).
+
+**MOOSE** at commit `6233f03901aa2b9161270312fd2228ac3b3844b2` (branch
+`master`, 10 October 2026). Same basis as the two MOOSE pages above. The
+repository's `LICENSE` and `COPYRIGHT` at this commit are byte-identical to
+the copies already kept as `moose-docs/LICENSE` and `moose-docs/COPYRIGHT`
+(SHA-256 compared, 11 October 2026), so those two files cover these pages
+too.
+
+**PFLOTRAN** documentation (<https://gitlab.com/pflotran/pflotran-documentation>,
+commit `98eb153238c90e9c597becdd69395005d229bfa3`, 18 September 2026). Its
+`LICENSE` (kept as [`pflotran-docs/LICENSE`](pflotran-docs/LICENSE)) begins
+"PFLOTRAN is released under the GNU LESSER GENERAL PUBLIC LICENSE (LGPL)" and
+carries the LGPL version 3 text with GPL version 3 after it. Its `COPYRIGHT`
+(kept as [`pflotran-docs/COPYRIGHT`](pflotran-docs/COPYRIGHT)) reads, for
+v5.X, "Copyright 2023, Battelle Memorial Institute ... Battelle Memorial
+Institute (hereinafter Battelle) hereby grants permission to any person or
+entity lawfully obtaining a copy of this software and associated
+documentation files (hereinafter “the Software”) to redistribute and use the
+Software in source and binary forms, with or without modification",
+provided the copyright notice, the conditions and the disclaimers are
+retained, and the Battelle name is not used without consent. It then
+reproduces the earlier Sandia (v3.X) and Los Alamos (v2.X) notices. Both
+files are byte-identical to the PFLOTRAN code repository's `LICENSE` and
+`COPYRIGHT` recorded in the workspace's
+`crates/outram-park-fork-pflotran/NOTICE` (SHA-256 `925e69c8…b062` and
+`2b079851…6cc6`, compared 11 October 2026). Keeping both beside the pages
+meets the notice's conditions; this copy implies no endorsement by Battelle.
+
+| File | Document | Upstream path at the pinned commit | SHA-256 |
+|---|---|---|---|
+| `moose-docs/Dynamics.md` | MOOSE Solid Mechanics module documentation, "Dynamics" (strong form of the dynamic balance of linear momentum; Newmark and HHT time integration) | `modules/solid_mechanics/doc/content/modules/solid_mechanics/Dynamics.md` | `9103829915ae9db6fe500a66ff0eccc9b5da1c2e9dbfb7d958c6f7fa8f9d6097` |
+| `moose-docs/supplementalStressDivergenceKernels.md` | MOOSE Solid Mechanics module documentation, stress divergence kernels (weak form of div sigma = 0 by Galerkin's method and the divergence theorem) | `modules/solid_mechanics/doc/content/modules/solid_mechanics/common/supplementalStressDivergenceKernels.md` | `6277148648fb88597d82e4959455ae4962845bd09aab2c29fc1f40a45178347d` |
+| `moose-docs/fem_principles.md` | MOOSE documentation, help, "Finite Element Concepts" (polynomial fitting, finite elements simplified, the steps of a weak form) | `modules/doc/content/help/finite_element_concepts/fem_principles.md` | `a773043a0422dfe6fdd550774317f73678d6de1bb396797bc7c607a16b50d652` |
+| `moose-docs/FEProblemBase.md` | MOOSE framework documentation, "FEProblemBase" (incl. "Shape Functions") | `framework/doc/content/source/problems/FEProblemBase.md` | `99611ee2cb17fbe2497a1a9e922453386ad3b81c662143d21ecb0a3351a44acc` |
+| `pflotran-docs/mode_reactive_transport.rst` | PFLOTRAN theory guide, reactive transport mode ("Governing Equations": multiphase mass conservation, flux with the diffusion/dispersion tensor in a_L and a_T; "Sorption Isotherm": retardation factor) | `source/theory_guide/mode_reactive_transport.rst` | `071cc10f5b914bb0b236c93866b4affe343760acae17aa7700ff5abab8eb17dc` |
+| `pflotran-docs/pm_ufd_decay.rst` | PFLOTRAN theory guide, "UFD Decay" process model (radionuclide decay, ingrowth and Kd phase partitioning for a nuclear waste repository) | `source/theory_guide/pm_ufd_decay.rst` | `3cd13a7eeb79e28b5483d13f7805138b09381b70da625d892826103c20214cca` |
+| `pflotran-docs/LICENSE` | PFLOTRAN's licence (LGPL 3.0, with GPL 3.0) | `LICENSE` | `925e69c826a46d22362381d2742ff6ffaa4365be46646e8658967cf850a5b062` |
+| `pflotran-docs/COPYRIGHT` | PFLOTRAN's copyright notices (Battelle v5.X, NTESS v3.X, LANS v2.X) | `COPYRIGHT` | `2b0798510a503d84dae708461ac6feac2cea9ba608b837473aadba8c76ad4cc6` |
 
 ## 9. Other U.S. Government works that state they are not copyrighted
 
